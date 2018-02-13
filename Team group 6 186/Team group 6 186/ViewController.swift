@@ -9,12 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var jawn = "dont worry about it"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    //Stupid you are
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
