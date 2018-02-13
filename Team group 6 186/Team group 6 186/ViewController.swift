@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Team group 6 186
 //
-//  Created by Taylor Weil on 2/6/18.
+//  Created by Taylor Weil and  no one else on 2/6/18.
 //  Copyright © 2018 Taylor Weil. All rights reserved.
 //
 
