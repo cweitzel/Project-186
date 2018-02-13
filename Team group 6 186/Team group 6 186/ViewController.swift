@@ -17,7 +17,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    var name: String = ""
+    @IBOutlet weak var labelName: UILabel!
+    @IBAction func buttonClick(sender: UIButton) {
+        name = textFieldName.text!
+        labelName.text = "Hello \(name)"
+    }
+    @IBOutlet weak var textFieldName:UITextField!
+    
 }
 
