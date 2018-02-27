@@ -15,6 +15,7 @@
 		F81D9808202A2E480015F35F /* Team_group_6_186Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D9807202A2E480015F35F /* Team_group_6_186Tests.swift */; };
 		F81D9813202A2E490015F35F /* Team_group_6_186UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D9812202A2E490015F35F /* Team_group_6_186UITests.swift */; };
 		F8A320B22045F3A100359854 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A320B12045F3A100359854 /* Test.swift */; };
+		F8A320B42045F53600359854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A320B32045F53500359854 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F81D9812202A2E490015F35F /* Team_group_6_186UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team_group_6_186UITests.swift; sourceTree = "<group>"; };
 		F81D9814202A2E490015F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A320B12045F3A100359854 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		F8A320B32045F53500359854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Team group 6 186.xcodeproj/../ViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		F81D97F1202A2E480015F35F /* Team group 6 186 */ = {
 			isa = PBXGroup;
 			children = (
+				F8A320B32045F53500359854 /* ViewController.swift */,
 				F8A320B12045F3A100359854 /* Test.swift */,
 				F81D97F2202A2E480015F35F /* AppDelegate.swift */,
 				F81D97F4202A2E480015F35F /* ViewController.swift */,
@@ -264,6 +267,7 @@
 			files = (
 				F81D97F5202A2E480015F35F /* ViewController.swift in Sources */,
 				F81D97F3202A2E480015F35F /* AppDelegate.swift in Sources */,
+				F8A320B42045F53600359854 /* ViewController.swift in Sources */,
 				F8A320B22045F3A100359854 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

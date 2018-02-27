@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../ViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:../Team group 6 186/Test2ViewController.swift">
    </FileRef>
    <FileRef
