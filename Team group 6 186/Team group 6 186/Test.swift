@@ -15,6 +15,6 @@ class Test  {
         if (test == "Hello"){
             return 1;
         }
-        return 0;
+        return 2;
     }
 }
