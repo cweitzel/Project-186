@@ -24,8 +24,8 @@ class ViewController: UIViewController {
    
     
     @IBAction func enterTapped(_ sender: Any) {
-        let test = Test(input: textFieldName.text!)
-        textView.text = test.getOut()
+        let test = Test(input: textFieldName.text!) //creates an object to test user input
+        textView.text = test.getOut() //prints the output
     }
 }
 
