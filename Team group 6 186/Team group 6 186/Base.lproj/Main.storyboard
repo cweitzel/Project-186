@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
-                                <rect key="frame" x="164" y="363" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
+                                <rect key="frame" x="-274" y="-317" width="923" height="1390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="happy-face-man-with-post-it-note-on-head-representing-depression-happy-AYP827">
                                     <color key="titleShadowColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -56,4 +56,7 @@
             <point key="canvasLocation" x="140" y="98.50074962518741"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="happy-face-man-with-post-it-note-on-head-representing-depression-happy-AYP827" width="869" height="1390"/>
+    </resources>
 </document>
