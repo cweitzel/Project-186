@@ -24,8 +24,9 @@ class ViewController: UIViewController {
    
     
     @IBAction func enterTapped(_ sender: Any) {
-        textView.text="\(textFieldName.text!)"
+        let test = Test(input: textFieldName.text!)
+        textView.text = test.getOut()
     }
-        }
+}
 
 

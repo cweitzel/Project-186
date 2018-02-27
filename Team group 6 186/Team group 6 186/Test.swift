@@ -11,10 +11,29 @@ import UIKit
 
 class Test  {
     
-    func testHello(test: String) -> Int {
-        if (test == "Hello"){
-            return 1;
-        }
-        return 0;
+    var input = "DefaultIn"
+    var output = "DefaultOut"
+    
+    //Initilizer takes input from ViewController and tests
+    init(input: String){
+        self.input = input
+        
+        //Put all new methurds below to be tested
+        testHello()
+        
     }
+ 
+    //Returns text output
+    func getOut() -> String {
+        return output;
+    }
+    
+    
+    func testHello() {
+        if (input == "Hello"){
+            output = "Hello! How are you?";
+        }
+    }
+    
+    
 }
