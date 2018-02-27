@@ -15,7 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textFieldName.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
@@ -28,13 +27,5 @@ class ViewController: UIViewController {
         textView.text="\(textFieldName.text!)"
     }
         }
-    
-
-extension ViewController : UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-}
 
 
