@@ -9,21 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var textFieldName: UITextField!
+    @IBOutlet weak var textView: UITextView!
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        textFieldName.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    var name: String = ""
-    @IBOutlet weak var labelName: UILabel!
-    @IBAction func buttonClick(sender: UIButton) {
-        name = textFieldName.text!
-        labelName.text = "Hello \(name)"
-    }
-    @IBOutlet weak var textFieldName:UITextField!
+   
     
+    @IBAction func enterTapped(_ sender: Any) {
+        textView.text="\(textFieldName.text!)"
+    }
+        }
+    
+
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
+
 
