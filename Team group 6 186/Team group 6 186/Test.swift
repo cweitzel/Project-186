@@ -21,6 +21,7 @@ class Test  {
         //Put all new methurds below to be tested
         testHello()
 		testNaughty()
+        testJawn()
         
     }
  
@@ -41,5 +42,10 @@ class Test  {
 			output = "Fuck you";
 		}
 	}
+    func testJawn() {
+        if (input.range(of: "jawn") != nil){
+            output += " jawn"
+        }
+    }
     
 }
