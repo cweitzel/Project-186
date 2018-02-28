@@ -45,7 +45,10 @@ class Test  {
             (input.range(of: "bitch") != nil ) ||
             (input.range(of: "dick") != nil ) ||
             (input.range(of: "heck") != nil) ||
-            (input.range(of: "ass") != nil) {
+            (input.range(of: "ass") != nil) ||
+			(input.range(of: "bastard") != nil) ||
+			(input.range(of: "hell") != nil) ||
+			(input.range(of: "poop") != nil){
             output = "Watch your fucking mouth"
         }
         
