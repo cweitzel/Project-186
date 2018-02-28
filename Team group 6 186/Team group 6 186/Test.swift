@@ -41,10 +41,18 @@ class Test  {
 		if (input.range(of: "fuck") != nil) {
 			output = "Fuck you";
 		}
+        else if (input.range(of: "shit") != nil ) ||
+            (input.range(of: "bitch") != nil ) ||
+            (input.range(of: "dick") != nil ) ||
+            (input.range(of: "heck") != nil) ||
+            (input.range(of: "ass") != nil) {
+            output = "Watch your fucking mouth"
+        }
+        
 	}
     func testJawn() {
         if (input.range(of: "jawn") != nil){
-            output += " jawn"
+            output += ", jawn"
         }
     }
     
