@@ -38,21 +38,22 @@ class Test  {
     }
 	
 	func testNaughty() {
+		var badWords = [String]()
+		badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell", "poop"]
+		let size = badWords.count
+		
 		if (input.range(of: "fuck") != nil) {
 			output = "Fuck you";
 		}
-        else if (input.range(of: "shit") != nil ) ||
-            (input.range(of: "bitch") != nil ) ||
-            (input.range(of: "dick") != nil ) ||
-            (input.range(of: "heck") != nil) ||
-            (input.range(of: "ass") != nil) ||
-			(input.range(of: "bastard") != nil) ||
-			(input.range(of: "hell") != nil) ||
-			(input.range(of: "poop") != nil){
-            output = "Watch your fucking mouth"
-        }
-        
+		else{
+			for i in (0...size-1){
+				if (input.range(of: badWords[i]) != nil){
+					output = "Watch your fucking mouth"
+					}
+				}
+        	}
 	}
+	
     func testJawn() {
         if (input.range(of: "jawn") != nil){
             output += ", jawn"
