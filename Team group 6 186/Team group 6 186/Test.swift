@@ -25,18 +25,17 @@ class Test  {
         
     }
  
-    //Returns text outputy
+    //Returns text output
     func getOut() -> String {
         return output;
     }
     
-    
+    //Methurds
     func testHello() {
         if (input == "hello"){
             output = "Hello! How are you?";
         }
     }
-	
 	func testNaughty() {
 		var badWords = [String]()
 		badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
@@ -53,7 +52,6 @@ class Test  {
 				}
         	}
 	}
-	
     func testJawn() {
         if (input.range(of: "jawn") != nil){
             output += ", jawn"
