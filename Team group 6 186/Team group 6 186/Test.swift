@@ -16,7 +16,7 @@ class Test  {
     
     //Initilizer takes input from ViewController and tests
     init(input: String){
-        self.input = input
+        self.input = input.lowercased()
         
         //Put all new methurds below to be tested
         testHello()
@@ -30,7 +30,7 @@ class Test  {
     
     
     func testHello() {
-        if (input == "Hello"){
+        if (input == "hello"){
             output = "Hello! How are you?";
         }
     }
