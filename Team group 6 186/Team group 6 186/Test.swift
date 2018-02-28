@@ -20,6 +20,7 @@ class Test  {
         
         //Put all new methurds below to be tested
         testHello()
+		testNaughty()
         
     }
  
@@ -34,6 +35,11 @@ class Test  {
             output = "Hello! How are you?";
         }
     }
-    
+	
+	func testNaughty() {
+		if (input.range(of: "fuck") != nil) {
+			output = "Fuck you";
+		}
+	}
     
 }
