@@ -22,6 +22,7 @@ class Test  {
         testHello()
         testNaughty()
         testJawn()
+		testWhy()
         
     }
  
@@ -40,11 +41,9 @@ class Test  {
         var badWords = [String]()
         badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
         let size = badWords.count
-        
         if (input.range(of: "fuck") != nil) {
             output = "Fuck you";
-        }
-        else{
+        }else{
             for i in (0...size-1){
                 if (input.range(of: badWords[i]) != nil){
                     output = "Watch your fucking mouth"
@@ -57,8 +56,12 @@ class Test  {
             output += ", jawn"
         }
     }
-    //real shit
-    //U up?
-    //RNH
-    //Real test
+	
+	func testWhy() {
+		if (input.range(of: "why") != nil){
+			output = "why not?"
+		}
+	}
+	
+	
 }
