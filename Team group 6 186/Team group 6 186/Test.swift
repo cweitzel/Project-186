@@ -27,8 +27,8 @@ class Test  {
  
     //Returns text output
     func getOut() -> String {
-        return output;
-    }
+		return output;
+	}
     
     //Methurds
     func testHello() {
