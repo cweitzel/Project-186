@@ -20,7 +20,7 @@ class Test  {
         
         //Put all new methurds below to be tested
         testHello()
-		testNaughty()
+        testNaughty()
         testJawn()
         
     }
@@ -36,29 +36,29 @@ class Test  {
             output = "Hello! How are you?";
         }
     }
-	func testNaughty() {
-		var badWords = [String]()
-		badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
-		let size = badWords.count
-		
-		if (input.range(of: "fuck") != nil) {
-			output = "Fuck you";
-		}
-		else{
-			for i in (0...size-1){
-				if (input.range(of: badWords[i]) != nil){
-					output = "Watch your fucking mouth"
-					}
-				}
-        	}
-	}
+    func testNaughty() {
+        var badWords = [String]()
+        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
+        let size = badWords.count
+        
+        if (input.range(of: "fuck") != nil) {
+            output = "Fuck you";
+        }
+        else{
+            for i in (0...size-1){
+                if (input.range(of: badWords[i]) != nil){
+                    output = "Watch your fucking mouth"
+                    }
+                }
+            }
+    }
     func testJawn() {
         if (input.range(of: "jawn") != nil){
             output += ", jawn"
         }
     }
-	//real shit
-	//U up?
-	//RNH
+    //real shit
+    //U up?
+    //RNH
     //Real test
 }
