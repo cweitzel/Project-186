@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
-                                <rect key="frame" x="-274" y="-317" width="923" height="1390"/>
+                                <rect key="frame" x="85" y="484" width="195" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="happy-face-man-with-post-it-note-on-head-representing-depression-happy-AYP827-1">
+                                <state key="normal" title="Button">
                                     <color key="titleShadowColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -43,10 +43,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="65T-lJ-jYp" id="SUb-O4-I1U"/>
                         <outlet property="textFieldName" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
                         <outlet property="textView" destination="yoY-ld-Cwe" id="Hhx-B4-nuY"/>
                     </connections>
@@ -56,7 +57,4 @@
             <point key="canvasLocation" x="140" y="98.50074962518741"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="happy-face-man-with-post-it-note-on-head-representing-depression-happy-AYP827-1" width="869" height="1390"/>
-    </resources>
 </document>
