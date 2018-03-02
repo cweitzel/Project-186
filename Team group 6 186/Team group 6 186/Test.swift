@@ -109,5 +109,13 @@ class Test  {
 		}
 	}
 	
+	func changeBackground(backgroundName: String) -> String {
+		if(output == "yeet"){
+		return backgroundName
+		}
+		else {return "tinge_1.jpg"}
+	}
+	
+	
 	
 }
