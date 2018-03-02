@@ -108,6 +108,10 @@ class Test  {
 			output = qwersh[pick-1]
 		}
 	}
-	
-	
+	func testYou(){
+		if (input.range(of: "you?") != nil){
+			output = "Don't worry about it"
+		}
+		
+	}
 }
