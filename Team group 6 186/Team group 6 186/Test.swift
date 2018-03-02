@@ -17,22 +17,30 @@ class Test  {
     //Initilizer takes input from ViewController and tests
     init(input: String){
         self.input = input.lowercased()
-        //Put all new methurds below to be tested
-		
-        testHello()
-        testNaughty()
-        testJawn()
-		testWhy()
-		askQwershtin()
-		testNo()
-		testYes()
-		
+		first()
+		second()
     }
     //Returns text output
     func getOut() -> String {
 		return output;
 	}
-    
+	
+	//General Responces (Priotity 1)
+	func first(){
+		askQwershtin()
+		testNo()
+		testYes()
+		testHello()
+		testWhy()
+		testHello()
+	}
+	
+	//Additional Responcesv (Prioity 2)
+	func second(){
+		testNaughty()
+		testJawn()
+	}
+	
     //Methurds
     func testHello() {
         if (input.range(of: "hello") != nil){
