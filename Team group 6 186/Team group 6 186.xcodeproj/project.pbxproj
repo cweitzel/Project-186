@@ -16,7 +16,7 @@
 		F81D9808202A2E480015F35F /* Team_group_6_186Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D9807202A2E480015F35F /* Team_group_6_186Tests.swift */; };
 		F81D9813202A2E490015F35F /* Team_group_6_186UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D9812202A2E490015F35F /* Team_group_6_186UITests.swift */; };
 		F8A320B22045F3A100359854 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A320B12045F3A100359854 /* Test.swift */; };
-		F8DB98732048C0270068A73D /* Qwerstins.txt in Resources */ = {isa = PBXBuildFile; fileRef = F8DB98722048C0270068A73D /* Qwerstins.txt */; };
+		F8DB98752048C2540068A73D /* Qwershtins.txt in Resources */ = {isa = PBXBuildFile; fileRef = F8DB98742048C2540068A73D /* Qwershtins.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		F81D9812202A2E490015F35F /* Team_group_6_186UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team_group_6_186UITests.swift; sourceTree = "<group>"; };
 		F81D9814202A2E490015F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A320B12045F3A100359854 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		F8DB98722048C0270068A73D /* Qwerstins.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Qwerstins.txt; sourceTree = "<group>"; };
+		F8DB98742048C2540068A73D /* Qwershtins.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Qwershtins.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				F81D97F9202A2E480015F35F /* Assets.xcassets */,
 				F81D97FB202A2E480015F35F /* LaunchScreen.storyboard */,
 				F81D97FE202A2E480015F35F /* Info.plist */,
-				F8DB98722048C0270068A73D /* Qwerstins.txt */,
+				F8DB98742048C2540068A73D /* Qwershtins.txt */,
 			);
 			path = "Team group 6 186";
 			sourceTree = "<group>";
@@ -241,10 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DB98752048C2540068A73D /* Qwershtins.txt in Resources */,
 				F81D97FD202A2E480015F35F /* LaunchScreen.storyboard in Resources */,
 				F81D97FA202A2E480015F35F /* Assets.xcassets in Resources */,
 				F81D97F8202A2E480015F35F /* Main.storyboard in Resources */,
-				F8DB98732048C0270068A73D /* Qwerstins.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
