@@ -49,6 +49,7 @@ class ViewController: UIViewController {
 		//background = Test.changeBackground("14804370-angry-businessman-with-bat-on-white")
         let test = Test(input: textFieldName.text!) //creates an object to test user input
         textView.text = test.getOut()//prints the output
+		textFieldName.text = ""
     }
 	
 }
