@@ -111,7 +111,7 @@ class Test  {
         }
     }
 	func testYou(){
-		if (input.range(of: "you?") != nil){
+		if (input.range(of: "you") != nil){
 			output = "Don't worry about it"
 		}
 		
