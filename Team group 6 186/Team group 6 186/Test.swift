@@ -13,11 +13,12 @@ class Test  {
     
     var input = "DefaultIn"
     var output = "DefaultOut"
-    
+    var temp = "DefaultIn"
     //Initilizer takes input from ViewController and tests
     init(input: String){
         self.input = input.lowercased()
         //Put all new methurds below to be tested
+		
         testHello()
         testNaughty()
         testJawn()
