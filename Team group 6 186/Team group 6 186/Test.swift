@@ -51,7 +51,7 @@ class Test  {
     }
     func testNaughty() {
         var badWords = [String]()
-        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
+        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn"]
         let size = badWords.count
         if (input.range(of: "fuck") != nil) {
             output = "Fuck you";
@@ -80,7 +80,7 @@ class Test  {
     }
     func testYes(){
         if(input == "yes"){
-            output = "ThAt SouNdS YuMmy"
+            output = "ThAt SouNdS YuMmy "
         }
     }
     func askQwershtin(){

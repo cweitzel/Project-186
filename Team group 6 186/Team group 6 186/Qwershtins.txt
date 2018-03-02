@@ -10,3 +10,8 @@ Are you a vegan?
 Show me your code
 5
 Show me your vegan?
+100
+What's your favorite color?
+50
+Ya like jazz?
+
