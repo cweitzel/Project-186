@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textView: UITextView!
 	@IBOutlet weak var button: UIButton!
-	var background = "14804370-angry-businessman-with-bat-on-white.jpg"
+	var background = "tinge_1.jpg"
 
     override func viewDidLoad() {
 		
@@ -21,13 +21,14 @@ class ViewController: UIViewController {
 		button.layer.borderWidth = 1
 		textFieldName.layer.borderWidth = 1
 		textView.layer.borderWidth = 1.5
-		button.layer.cornerRadius = 10
+		button.layer.cornerRadius = 15
 		button.clipsToBounds = true
 		textView.layer.cornerRadius=10
 		textView.clipsToBounds = true
 		textFieldName.layer.cornerRadius = 10
 		textFieldName.clipsToBounds = true
 		textView.isUserInteractionEnabled = false
+		
 		
 		
 		let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -41,14 +42,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
    
     
     @IBAction func enterTapped(_ sender: Any) {
 		//background = Test.changeBackground("14804370-angry-businessman-with-bat-on-white")
         let test = Test(input: textFieldName.text!) //creates an object to test user input
-        textView.text = test.getOut() //prints the output
-		
+        textView.text = test.getOut()//prints the output
     }
+	
 }
 
 
