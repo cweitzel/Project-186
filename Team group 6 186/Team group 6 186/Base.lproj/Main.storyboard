@@ -18,23 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-kF-vtp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-kF-vtp">
                                 <rect key="frame" x="16" y="318" width="300" height="30"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
-                                <rect key="frame" x="16" y="138" width="343" height="150"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
+                                <rect key="frame" x="16" y="138" width="343" height="140"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
                                 <rect key="frame" x="329" y="318" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="3551-illustration-of-a-black-right-arrow-pv">
                                     <color key="titleShadowColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="140" y="98.50074962518741"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="3551-illustration-of-a-black-right-arrow-pv" width="958" height="848"/>
+    </resources>
 </document>

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 		button.layer.borderWidth = 1
 		textFieldName.layer.borderWidth = 1
-		textView.layer.borderWidth = 1
+		textView.layer.borderWidth = 1.5
 		button.layer.cornerRadius = 10
 		button.clipsToBounds = true
 		textView.layer.cornerRadius=10

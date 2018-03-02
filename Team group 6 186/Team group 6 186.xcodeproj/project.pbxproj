@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		605C8B5C20473ECA008F3223 /* ClassDelNoah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C8B5B20473ECA008F3223 /* ClassDelNoah.swift */; };
 		F81D97F3202A2E480015F35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D97F2202A2E480015F35F /* AppDelegate.swift */; };
 		F81D97F5202A2E480015F35F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D97F4202A2E480015F35F /* ViewController.swift */; };
 		F81D97F8202A2E480015F35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81D97F6202A2E480015F35F /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		605C8B5B20473ECA008F3223 /* ClassDelNoah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDelNoah.swift; sourceTree = "<group>"; };
 		F81D97EF202A2E480015F35F /* Team group 6 186.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team group 6 186.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81D97F2202A2E480015F35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F81D97F4202A2E480015F35F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				F8A320B12045F3A100359854 /* Test.swift */,
-				605C8B5B20473ECA008F3223 /* ClassDelNoah.swift */,
 				F81D97F2202A2E480015F35F /* AppDelegate.swift */,
 				F81D97F4202A2E480015F35F /* ViewController.swift */,
 				F81D97F6202A2E480015F35F /* Main.storyboard */,
@@ -267,7 +264,6 @@
 			files = (
 				F81D97F5202A2E480015F35F /* ViewController.swift in Sources */,
 				F81D97F3202A2E480015F35F /* AppDelegate.swift in Sources */,
-				605C8B5C20473ECA008F3223 /* ClassDelNoah.swift in Sources */,
 				F8A320B22045F3A100359854 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
