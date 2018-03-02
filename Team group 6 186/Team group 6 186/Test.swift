@@ -17,16 +17,16 @@ class Test  {
     //Initilizer takes input from ViewController and tests
     init(input: String){
         self.input = input.lowercased()
-        
         //Put all new methurds below to be tested
         testHello()
         testNaughty()
         testJawn()
 		testWhy()
 		askQwershtin()
-        
+		testNo()
+		testYes()
+		
     }
- 
     //Returns text output
     func getOut() -> String {
 		return output;
@@ -34,8 +34,8 @@ class Test  {
     
     //Methurds
     func testHello() {
-        if (input == "hello"){
-            output = "Hello! How are you?";
+        if (input.range(of: "hello") != nil){
+            output = "Hello!";
         }
     }
     func testNaughty() {
@@ -62,7 +62,16 @@ class Test  {
 			output = "why not?"
 		}
 	}
-	
+	func testNo(){
+		if(input == "no"){
+			output = "Too bad :("
+		}
+	}
+	func testYes(){
+		if(input == "yes"){
+			output = "ThAt SouNdS YuMmy"
+		}
+	}
 	func askQwershtin(){
 		//Pulls file and puts everthing into an array
 		if(output == "DefaultOut"){
@@ -87,8 +96,9 @@ class Test  {
 				num = num - Int(qwersh[pick])!
 				pick += 2
 			}
-			output = qwersh[pick-1] + String(sum)
+			output = qwersh[pick-1]
 		}
 	}
+	
 	
 }

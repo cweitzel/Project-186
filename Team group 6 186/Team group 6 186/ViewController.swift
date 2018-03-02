@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textView: UITextView!
-	@IBOutlet weak var button: UIButton!
-	
+    @IBOutlet weak var button: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		button.layer.borderWidth = 1
-		textFieldName.layer.borderWidth = 1
-		textView.layer.borderWidth = 1
+        button.layer.borderWidth = 1
+        textFieldName.layer.borderWidth = 1
+        textView.layer.borderWidth = 1
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
