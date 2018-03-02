@@ -8,13 +8,15 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textView: UITextView!
 	@IBOutlet weak var button: UIButton!
-	
+	var background = "14804370-angry-businessman-with-bat-on-white.jpg"
 
     override func viewDidLoad() {
+		
         super.viewDidLoad()
 		button.layer.borderWidth = 1
 		textFieldName.layer.borderWidth = 1
@@ -27,8 +29,9 @@ class ViewController: UIViewController {
 		textFieldName.clipsToBounds = true
 		textView.isUserInteractionEnabled = false
 		
+		
 		let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-		backgroundImage.image = UIImage(named: "tinge_1.jpg")
+		backgroundImage.image = UIImage(named: background)
 		backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
 		self.view.insertSubview(backgroundImage, at: 0)
 		
@@ -41,8 +44,10 @@ class ViewController: UIViewController {
    
     
     @IBAction func enterTapped(_ sender: Any) {
+		//background = Test.changeBackground("14804370-angry-businessman-with-bat-on-white")
         let test = Test(input: textFieldName.text!) //creates an object to test user input
         textView.text = test.getOut() //prints the output
+		
     }
 }
 
