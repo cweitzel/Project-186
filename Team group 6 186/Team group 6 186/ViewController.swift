@@ -53,17 +53,17 @@ class ViewController: UIViewController {
        // textView.text = test.getOut()//prints the output
 		printLine(newLine: test.getOut())
     }
-	
-	func printLine(newLine: String){
-		//while(outputText[i] != nil){
-		//	outputText
-		//}
-		var print = ""
-		outputText[outputLine] = newLine;
-		for i in 0...outputLine+1{
-			print += outputText[i] + "\n"
-		}
-		textView.text = print
-		outputLine = outputLine + 1
-	}
+    
+    func printLine(newLine: String){
+        //while(outputText[i] != nil){
+        //    outputText
+        //}
+        var print = ""
+        outputText[outputLine] = newLine;
+        for i in 0...outputLine+1{
+            print += outputText[i] + "\n"
+        }
+        textView.text = print
+        outputLine = outputLine + 1
+    }
 }

@@ -17,8 +17,8 @@ class Test  {
     //Initilizer takes input from ViewController and tests
     init(input: String){
         self.input = input.lowercased()
-		first()
-		second()
+        first()
+        second()
     }
     //Returns text output
     func getOut() -> String {
@@ -33,9 +33,9 @@ class Test  {
         testHello()
         testWhy()
         testHello()
-		testYou()
-		testNuthin()
-		
+        testYou()
+        testNuthin()
+        
     }
     
     //Additional Responcesv (Prioity 2)
@@ -107,13 +107,13 @@ class Test  {
             output = qwersh[pick-1]
         }
     }
-	func testYou(){
-		if (input.range(of: "you") != nil) {output = "Don't worry about it"}
-	}
-	
-	func testNuthin(){
-		if (input == ""){output = "I can't hear you."}
-	}
-	
+    func testYou(){
+        if (input.range(of: "you") != nil) {output = "Don't worry about it"}
+    }
+    
+    func testNuthin(){
+        if (input == ""){output = "I can't hear you."}
+    }
+    
 }
 
