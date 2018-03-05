@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
-	var outputText = Array(repeating: "", count: 11)
-	var outputLine = 0;
+    var outputText = Array(repeating: "", count: 11)
+    var outputLine = 0;
 
     override func viewDidLoad() {
         
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         //background = Test.changeBackground("14804370-angry-businessman-with-bat-on-white")
         let test = Test(input: textFieldName.text!) //creates an object to test user input
        // textView.text = test.getOut()//prints the output
-		printLine(newLine: test.getOut())
+        printLine(newLine: test.getOut())
     }
     
     func printLine(newLine: String){
