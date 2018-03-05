@@ -34,6 +34,7 @@ class Test  {
         testWhy()
         testHello()
 		testYou()
+		testNuthin()
 		
     }
     
@@ -51,7 +52,7 @@ class Test  {
     }
     func testNaughty() {
         var badWords = [String]()
-        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop"]
+        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn"]
         let size = badWords.count
         if (input.range(of: "fuck") != nil) {
             output = "Fuck you";
@@ -74,14 +75,10 @@ class Test  {
         }
     }
     func testNo(){
-        if(input == "no"){
-            output = "Too bad :("
-        }
+        if(input == "no"){output = "Too bad :("}
     }
     func testYes(){
-        if(input == "yes"){
-            output = "ThAt SouNdS YuMmy"
-        }
+        if(input == "yes"){output = "Excellent!"}
     }
     func askQwershtin(){
         //Pulls file and puts everthing into an array
@@ -111,9 +108,12 @@ class Test  {
         }
     }
 	func testYou(){
-		if (input.range(of: "you") != nil){
-			output = "Don't worry about it"
-		}
-		
+		if (input.range(of: "you") != nil) {output = "Don't worry about it"}
 	}
+	
+	func testNuthin(){
+		if (input == ""){output = "I can't hear you."}
+	}
+	
 }
+
