@@ -69,4 +69,11 @@ class ViewController: UIViewController {
 		}
 		else {outputLine = outputLine + 1}
     }
+	@IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
+		let test = Test(input: textFieldName.text!) //creates an object to test user input
+		// textView.text = test.getOut()//prints the output
+		printLine(newLine: test.getOut())
+		
+	}
+	
 }

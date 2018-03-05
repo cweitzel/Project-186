@@ -25,6 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="returnTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Llf-ij-qqJ"/>
+                                    <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xnf-L8-GSg"/>
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
