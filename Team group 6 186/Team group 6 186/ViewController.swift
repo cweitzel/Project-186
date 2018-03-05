@@ -48,17 +48,17 @@ class ViewController: UIViewController {
    
     
     @IBAction func enterTapped(_ sender: Any) {
-        //background = Test.changeBackground("14804370-angry-businessman-with-bat-on-white")
-        let test = Test(input: textFieldName.text!) //creates an object to test user input
-       // textView.text = test.getOut()//prints the output
-        printLine(newLine: test.getOut())
+        printLine()
     }
-    
-    func printLine(newLine: String){
+	@IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
+		printLine()
+	}
+    func printLine(){
+		let test = Test(input: textFieldName.text!)
         var print = ""
-        outputText[outputLine] = textFieldName.text!
+        outputText[outputLine] = test.getIn()
         outputLine = outputLine + 1
-        outputText[outputLine] = newLine
+		outputText[outputLine] = test.getOut()
         outputLine = outputLine + 1
         while (outputLine >= 11){
             for i in 0...11{
@@ -72,11 +72,6 @@ class ViewController: UIViewController {
         textView.text = print
 		textFieldName.text = ""
     }
-	@IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
-		let test = Test(input: textFieldName.text!) //creates an object to test user input
-		// textView.text = test.getOut()//prints the output
-		printLine(newLine: test.getOut())
-		
-	}
+	
 	
 }

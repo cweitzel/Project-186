@@ -24,6 +24,11 @@ class Test  {
     func getOut() -> String {
         return output;
     }
+	
+	//Returns text input
+	func getIn() -> String {
+		return input;
+	}
     
     //General Responces (Priotity 1)
     func first(){
@@ -47,22 +52,25 @@ class Test  {
     
     //Methurds
     func testHello() {
-        if (input.range(of: "hello") != nil){
+		if ((input.range(of: "hello") != nil) || (input.range(of: "😊") != nil)){
             output = "Hello!";
         }
     }
     func testNaughty() {
         var badWords = [String]()
-        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn"]
+        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn", "🖕🏻"]
         let size = badWords.count
         if (input.range(of: "fuck") != nil) {
             output = "Fuck you";
         }else{
             for i in (0...size-1){
                 if (input.range(of: badWords[i]) != nil){
-                    output = "Watch your fucking mouth"
-                    }
-                }
+					output = "Watch your fucking mouth"
+					for j in 0...badWords.count-1{
+						input = input.replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
+					}
+				}
+			}
             }
     }
     func testJawn() {
