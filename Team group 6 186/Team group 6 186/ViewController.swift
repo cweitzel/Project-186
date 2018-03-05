@@ -55,19 +55,22 @@ class ViewController: UIViewController {
     }
     
     func printLine(newLine: String){
-		
         var print = ""
-        outputText[outputLine] = newLine;
+		outputText[outputLine] = textFieldName.text!
+		outputLine = outputLine + 1
+        outputText[outputLine] = newLine
+		outputLine = outputLine + 1
+		while (outputLine >= 11){
+			for i in 0...11{
+				outputText[i] = outputText[i+1]
+			}
+			outputLine = outputLine - 1
+		}
         for i in 0...outputLine+1{
             print += outputText[i] + "\n"
         }
         textView.text = print
-		if (outputLine == 9){
-			for i in 0...8{
-				outputText[i] = outputText[i+1]
-			}
-		}
-		else {outputLine = outputLine + 1}
+		textFieldName.text = ""
     }
 	@IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
 		let test = Test(input: textFieldName.text!) //creates an object to test user input
