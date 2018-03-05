@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
-    var outputText = Array(repeating: "", count: 11)
-    var outputLine = 0;
+	var outputText = Array(repeating: "", count: 13)
+	var outputLine = 0;
 
     override func viewDidLoad() {
         
@@ -56,16 +56,16 @@ class ViewController: UIViewController {
     
     func printLine(newLine: String){
         var print = ""
-		outputText[outputLine] = textFieldName.text!
-		outputLine = outputLine + 1
+        outputText[outputLine] = textFieldName.text!
+        outputLine = outputLine + 1
         outputText[outputLine] = newLine
-		outputLine = outputLine + 1
-		while (outputLine >= 11){
-			for i in 0...11{
-				outputText[i] = outputText[i+1]
-			}
-			outputLine = outputLine - 1
-		}
+        outputLine = outputLine + 1
+        while (outputLine >= 11){
+            for i in 0...11{
+                outputText[i] = outputText[i+1]
+            }
+            outputLine = outputLine - 1
+        }
         for i in 0...outputLine+1{
             print += outputText[i] + "\n"
         }
