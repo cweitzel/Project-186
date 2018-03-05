@@ -33,9 +33,10 @@ class Test  {
         testHello()
         testWhy()
         testHello()
-        testYou()
-        testNuthin()
-        
+		testYou()
+		testNuthin()
+        testCoinToss()
+		
     }
     
     //Additional Responcesv (Prioity 2)
@@ -113,7 +114,20 @@ class Test  {
     
     func testNuthin(){
         if (input == ""){output = "I can't hear you."}
+	}
+    func testCoinToss(){
+        if (input == "flip a coin")
+        {
+           let coin = (arc4random_uniform(2))
+            if(coin == 1)
+            {
+                output = "Heads"
+            }
+            else
+            {
+                output = "Tails"
+            }
+        }
     }
-    
 }
 
