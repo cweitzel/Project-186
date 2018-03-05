@@ -30,14 +30,10 @@ class ViewController: UIViewController {
         textFieldName.layer.cornerRadius = 10
         textFieldName.clipsToBounds = true
         textView.isUserInteractionEnabled = false
-        
-        
-        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: background)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
