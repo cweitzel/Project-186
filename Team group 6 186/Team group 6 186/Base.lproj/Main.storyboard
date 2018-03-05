@@ -23,8 +23,11 @@
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="returnTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Llf-ij-qqJ"/>
+                                </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
                                 <rect key="frame" x="16" y="138" width="343" height="140"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -33,7 +36,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
                                 <rect key="frame" x="329" y="318" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="3551-illustration-of-a-black-right-arrow-pv">
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="arrowUp">
                                     <color key="titleShadowColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -70,6 +74,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3551-illustration-of-a-black-right-arrow-pv" width="958" height="848"/>
+        <image name="arrowUp" width="848" height="958"/>
     </resources>
 </document>
