@@ -35,6 +35,7 @@ class Test  {
         testHello()
 		testYou()
 		testNuthin()
+        testCoinToss()
 		
     }
     
@@ -114,6 +115,21 @@ class Test  {
 	func testNuthin(){
 		if (input == ""){output = "I can't hear you."}
 	}
+    
+    func testCoinToss(){
+        if (input == "flip a coin")
+        {
+           let coin = (arc4random_uniform(2))
+            if(coin == 1)
+            {
+                output = "Heads"
+            }
+            else
+            {
+                output = "Tails"
+            }
+        }
+    }
 	
 }
 
