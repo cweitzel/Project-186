@@ -52,7 +52,6 @@ class ViewController: UIViewController {
         let test = Test(input: textFieldName.text!) //creates an object to test user input
        // textView.text = test.getOut()//prints the output
 		printLine(newLine: test.getOut())
-		textFieldName.text = ""
     }
     
     func printLine(newLine: String){
@@ -71,12 +70,6 @@ class ViewController: UIViewController {
             print += outputText[i] + "\n"
         }
         textView.text = print
-		
-//		if (outputLine >= 9){
-//			for i in 0...8{
-//				outputText[i] = outputText[i+1]
-//			}
-//		}
-//		else {outputLine = outputLine + 2}
+		textFieldName.text = ""
     }
 }
