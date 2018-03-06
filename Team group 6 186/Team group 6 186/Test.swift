@@ -41,6 +41,10 @@ class Test  {
         testYou()
         testNuthin()
         testCoinToss()
+		testQuestion()
+		testThank()
+		testSorry()
+		testRude()
         
     }
     
@@ -58,7 +62,7 @@ class Test  {
     }
     func testNaughty() {
         var badWords = [String]()
-        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn", "🖕🏻"]
+        badWords+=["shit", "bitch", "heck", "dick", "ass", "bastard", "hell ", "poop", "damn", "🖕🏻", "hell?"]
         let size = badWords.count
         if (input.range(of: "fuck") != nil) {
             output = "Fuck you";
@@ -75,7 +79,8 @@ class Test  {
     }
     func testJawn() {
         if (input.range(of: "jawn") != nil){
-            output += ", jawn"
+			 output = output.replacingOccurrences(of: "?", with: ",")
+            output += " jawn"
         }
     }
     func testWhy() {
@@ -137,5 +142,23 @@ class Test  {
             }
         }
     }
+	func testQuestion(){
+		if (input.range(of: "what") != nil) && (input.range(of: "?") != nil){
+			let response = (arc4random_uniform(2))
+			if (response == 1){output = "Don't worry about it."}
+			else {output = "I dunno, you tell me."}
+		}
+	}
+	func testThank(){
+		if (input.range(of: "thank") != nil){output = "You're very welcome :)"}
+	}
+	func testRude(){
+		if (input.range(of: "stupid") != nil) || (input.range(of: "dumb") != nil){
+			output = "How rude!"
+		}
+	}
+	func testSorry(){
+		if (input.range(of: "sorry") != nil){output = "No hard feelings 😃"}
+	}
 }
 
