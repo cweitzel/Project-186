@@ -41,6 +41,7 @@ class Test  {
 		testYou()
 		testNuthin()
         testCoinToss()
+		testCalc()
 		
     }
     
@@ -137,5 +138,11 @@ class Test  {
             }
         }
     }
+	func testCalc(){
+		if (input.range(of: "what is") != nil) {
+				var mathArr = input.components(separatedBy: " ")
+				let calc = Calc(first: mathArr[2], second: mathArr[4], type: mathArr[3])
+				output = String(calc.getAns())
+		}
+	}
 }
-
