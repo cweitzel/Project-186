@@ -21,7 +21,10 @@ class Calc {
 		if ((type == "minus") || (type == "-")){getDiff()}
 		if ((type == "times") || (type == "*")){getProduct()}
 		if ((type == "divided") || (type == "/")){getQuotient()}
-
+	}
+	init(first: String){
+		self.first = first
+		findNum()
 	}
 	
 	func getFirst() -> Double {
