@@ -24,11 +24,11 @@ class Test  {
     func getOut() -> String {
         return output;
     }
-	
-	//Returns text input
-	func getIn() -> String {
-		return input;
-	}
+    
+    //Returns text input
+    func getIn() -> String {
+        return input;
+    }
     
     //General Responces (Priotity 1)
     func first(){
@@ -38,10 +38,10 @@ class Test  {
         testHello()
         testWhy()
         testHello()
-		testYou()
-		testNuthin()
+        testYou()
+        testNuthin()
         testCoinToss()
-		
+        
     }
     
     //Additional Responcesv (Prioity 2)
@@ -52,7 +52,7 @@ class Test  {
     
     //Methurds
     func testHello() {
-		if ((input.range(of: "hello") != nil) || (input.range(of: "😊") != nil)){
+        if ((input.range(of: "hello") != nil) || (input.range(of: "😊") != nil)){
             output = "Hello!";
         }
     }
@@ -65,12 +65,12 @@ class Test  {
         }else{
             for i in (0...size-1){
                 if (input.range(of: badWords[i]) != nil){
-					output = "Watch your fucking mouth"
-					for j in 0...badWords.count-1{
-						input = input.replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
-					}
-				}
-			}
+                    output = "Watch your fucking mouth"
+                    for j in 0...badWords.count-1{
+                        input = input.replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
+                    }
+                }
+            }
             }
     }
     func testJawn() {
@@ -122,7 +122,7 @@ class Test  {
     
     func testNuthin(){
         if (input == ""){output = "I can't hear you."}
-	}
+    }
     func testCoinToss(){
         if (input == "flip a coin")
         {
