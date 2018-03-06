@@ -3,7 +3,7 @@ Waddup?
 100
 How's it going?
 10
-Do you like cheese?
+Do you like men?
 100
 Are you a vegan?
 75
@@ -16,3 +16,5 @@ What's your favorite color?
 Ya like jazz?
 15
 Haha Joke's on you
+5
+Did you know that Gnirts backwards... spells "String" :O

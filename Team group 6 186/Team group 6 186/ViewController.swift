@@ -10,7 +10,7 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var textFieldName: UITextField!
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
@@ -18,17 +18,17 @@ class ViewController: UIViewController {
     var outputLine = 0;
 
     override func viewDidLoad() {
-        
+	
         super.viewDidLoad()
         button.layer.borderWidth = 1
-        textFieldName.layer.borderWidth = 1
+        textField.layer.borderWidth = 1
         textView.layer.borderWidth = 1.5
         button.layer.cornerRadius = 15
         button.clipsToBounds = true
         textView.layer.cornerRadius=10
         textView.clipsToBounds = true
-        textFieldName.layer.cornerRadius = 10
-        textFieldName.clipsToBounds = true
+        textField.layer.cornerRadius = 10
+        textField.clipsToBounds = true
         textView.isUserInteractionEnabled = false
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: background)
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         printLine()
     }
     func printLine(){
-        let test = Test(input: textFieldName.text!)
+        let test = Test(input: textField.text!)
         var print = ""
         outputText[outputLine] = test.getIn()
         outputLine = outputLine + 1
@@ -64,6 +64,6 @@ class ViewController: UIViewController {
             print += outputText[i] + "\n"
         }
         textView.text = print
-        textFieldName.text = ""
+        textField.text = ""
     }
 }

@@ -45,7 +45,7 @@ class Test  {
 		testThank()
 		testSorry()
 		testRude()
-        
+		testLove()
     }
     
     //Additional Responcesv (Prioity 2)
@@ -159,6 +159,9 @@ class Test  {
 	}
 	func testSorry(){
 		if (input.range(of: "sorry") != nil){output = "No hard feelings 😃"}
+	}
+	func testLove(){
+		if (input.range(of: "love you") != nil){output = "Let's just stay friends..."}
 	}
 }
 

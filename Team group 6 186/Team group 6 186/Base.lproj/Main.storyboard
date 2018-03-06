@@ -65,7 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="65T-lJ-jYp" id="SUb-O4-I1U"/>
-                        <outlet property="textFieldName" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
+                        <outlet property="textField" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
                         <outlet property="textView" destination="yoY-ld-Cwe" id="Hhx-B4-nuY"/>
                     </connections>
                 </viewController>
