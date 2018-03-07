@@ -45,9 +45,7 @@ class Test  {
 		testThank()
 		testSorry()
 		testRude()
-		
 		testCalc()
-		
 	}
 	
 	//Additional Responcesv (Prioity 2)
@@ -83,6 +81,27 @@ class Test  {
 		if (input.range(of: "jawn") != nil){
 			output = output.replacingOccurrences(of: "?", with: ",")
 			output += " jawn"
+		}
+	}
+	func testCoinToss(){
+		if (input == "flip a coin")
+		{
+			let coin = (arc4random_uniform(2))
+			if(coin == 1)
+			{
+				output = "Heads"
+			}
+			else
+			{
+				output = "Tails"
+			}
+		}
+	}
+	func testCalc(){
+		if (input.range(of: "what is") != nil) {
+			var mathArr = input.components(separatedBy: " ")
+			let calc = Calc(first: mathArr[2], second: mathArr[4], type: mathArr[3])
+			output = String(calc.getAns());
 		}
 	}
 	func testWhy() {
@@ -128,20 +147,6 @@ class Test  {
 	}
 	func testNuthin(){
 		if (input == ""){output = "I can't hear you."}
-	}
-	func testCoinToss(){
-		if (input == "flip a coin")
-		{
-			let coin = (arc4random_uniform(2))
-			if(coin == 1)
-			{
-				output = "Heads"
-			}
-			else
-			{
-				output = "Tails"
-			}
-		}
 	}
 	func testQuestion(){
 		if (input.range(of: "what") != nil) && (input.range(of: "?") != nil){
