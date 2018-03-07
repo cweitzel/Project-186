@@ -48,6 +48,7 @@ class Calc {
 	}
 	
 	func findNum(){
+		second = second.replacingOccurrences(of: "?", with: "")
 		if (Double(first) != nil){
 			firstNum = Double(first)!
 		}
@@ -56,6 +57,7 @@ class Calc {
 			secondNum = Double(second)!
 		}
 		else { secondNum = makeNum(check: second)}
+		
 	}
 	
 	func makeNum(check: String) -> Double{
