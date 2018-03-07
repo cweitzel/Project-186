@@ -141,7 +141,7 @@ class Test  {
 		if (input.range(of: "what is") != nil) {
 				var mathArr = input.components(separatedBy: " ")
 				let calc = Calc(first: mathArr[2], second: mathArr[4], type: mathArr[3])
-				output = String(calc.getAns())
+				output = String(calc.getAns());
 		}
 	}
 }
