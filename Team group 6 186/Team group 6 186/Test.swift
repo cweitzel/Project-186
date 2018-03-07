@@ -124,7 +124,6 @@ class Test  {
     func testYou(){
         if (input.range(of: "you") != nil) {output = "Don't worry about it"}
     }
-    
     func testNuthin(){
         if (input == ""){output = "I can't hear you."}
     }
@@ -161,4 +160,3 @@ class Test  {
 		if (input.range(of: "sorry") != nil){output = "No hard feelings 😃"}
 	}
 }
-
