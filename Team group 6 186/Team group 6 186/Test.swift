@@ -46,6 +46,9 @@ class Test  {
 		testSorry()
 		testRude()
 		testCalc()
+		testDice()
+		testTime()
+		testDate()
 	}
 	
 	//Additional Responcesv (Prioity 2)
@@ -175,7 +178,7 @@ class Test  {
 	}
 	
 	func testDice(){
-		if (input.range(of: "roll a die") != nil)
+		if(input.range(of: "roll") != nil && input.range(of: "die") != nil)
 		{output = String(arc4random_uniform(6)+1)}
 	}
 	
