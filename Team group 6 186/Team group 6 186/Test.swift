@@ -173,4 +173,37 @@ class Test  {
 	func testSorry(){
 		if (input.range(of: "sorry") != nil){output = "No hard feelings 😃"}
 	}
+	
+	func testDice(){
+		if (input.range(of: "roll a die") != nil)
+		{output = String(arc4random_uniform(6)+1)}
+	}
+	
+	func testCelciustoFarenheit(){
+		if (input.range(of: "to Farenheit") != nil)
+		{/*Yet to be finished*/}
+	}
+	
+	func testTime(){
+		if (input.range(of: "what") != nil && input.range(of: "time") != nil){
+			let currentDate = Date()
+			let userCalendar = Calendar.current
+			var hour = userCalendar.component(.hour, from: currentDate)
+			let minutes = userCalendar.component(.minute, from: currentDate)
+			//let seconds = userCalendar.component(.second, from: currentDate)
+			if(hour>12){hour = hour-12}
+			output = "The time is \(hour) hours and \(minutes) minutes"
+		}
+	}
+	
+	func testDate(){
+		if(input.range(of: "what") != nil && input.range(of: "date") != nil)
+		{
+			let currentDate = Date()
+			let formatter = DateFormatter()
+			
+			formatter.dateFormat = "MM-dd-yyyy"
+			output = "The date is \(formatter.string(from: currentDate))"
+		}
+	}
 }
