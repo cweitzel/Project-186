@@ -176,17 +176,14 @@ class Test  {
 	func testSorry(){
 		if (input.range(of: "sorry") != nil){output = "No hard feelings 😃"}
 	}
-	
 	func testDice(){
 		if(input.range(of: "roll") != nil && input.range(of: "die") != nil)
 		{output = String(arc4random_uniform(6)+1)}
 	}
-	
 	func testCelciustoFarenheit(){
 		if (input.range(of: "to Farenheit") != nil)
 		{/*Yet to be finished*/}
 	}
-	
 	func testTime(){
 		if (input.range(of: "what") != nil && input.range(of: "time") != nil){
 			let currentDate = Date()
@@ -198,7 +195,6 @@ class Test  {
 			output = "The time is \(hour) hours and \(minutes) minutes"
 		}
 	}
-	
 	func testDate(){
 		if(input.range(of: "what") != nil && input.range(of: "date") != nil)
 		{
