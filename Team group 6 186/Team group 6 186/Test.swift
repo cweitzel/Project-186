@@ -10,37 +10,37 @@ import Foundation
 import UIKit
 
 class Test  {
-    
-    var input = "DefaultIn"
-    var output = "DefaultOut"
-    var temp = "DefaultIn"
-    //Initilizer takes input from ViewController and tests
-    init(input: String){
-        self.input = input.lowercased()
-        first()
-        second()
-    }
-    //Returns text output
-    func getOut() -> String {
-        return output;
-    }
-    
-    //Returns text input
-    func getIn() -> String {
-        return input;
-    }
-    
-    //General Responces (Priotity 1)
-    func first(){
-        askQwershtin()
-        testNo()
-        testYes()
-        testHello()
-        testWhy()
-        testHello()
-        testYou()
-        testNuthin()
-        testCoinToss()
+	
+	var input = "DefaultIn"
+	var output = "DefaultOut"
+	var temp = "DefaultIn"
+	//Initilizer takes input from ViewController and tests
+	init(input: String){
+		self.input = input.lowercased()
+		first()
+		second()
+	}
+	//Returns text output
+	func getOut() -> String {
+		return output;
+	}
+	
+	//Returns text input
+	func getIn() -> String {
+		return input;
+	}
+	
+	//General Responces (Priotity 1)
+	func first(){
+		askQwershtin()
+		testNo()
+		testYes()
+		testHello()
+		testWhy()
+		testHello()
+		testYou()
+		testNuthin()
+		testCoinToss()
 		testQuestion()
 		testThank()
 		testSorry()
@@ -147,6 +147,13 @@ class Test  {
 			let response = (arc4random_uniform(2))
 			if (response == 1){output = "Don't worry about it."}
 			else {output = "I dunno, you tell me."}
+			func testCalc(){
+				if (input.range(of: "what is") != nil) {
+					var mathArr = input.components(separatedBy: " ")
+					let calc = Calc(first: mathArr[2], second: mathArr[4], type: mathArr[3])
+					output = String(calc.getAns())
+				}
+			}
 		}
 	}
 	func testThank(){
@@ -164,4 +171,3 @@ class Test  {
 		if (input.range(of: "love you") != nil){output = "Let's just stay friends..."}
 	}
 }
-
