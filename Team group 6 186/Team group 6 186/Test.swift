@@ -101,7 +101,7 @@ class Test  {
 			var mathArr = input.components(separatedBy: " ")
 			if (mathArr.count == 5){
 				let calc = Calc(first: mathArr[2], second: mathArr[4], type: mathArr[3])
-				output = String(calc.getAns());
+				output = String(calc.getAns())
 			}
 			else if (mathArr.count == 3){
 				for chr in mathArr[2] {
@@ -111,7 +111,7 @@ class Test  {
 				}
 				var newMathArr = mathArr[2].components(separatedBy: marker)
 				let calc = Calc(first: newMathArr[0], second: newMathArr[1], type: marker)
-				output = String(calc.getAns());
+				output = String(calc.getAns())
 			}
 			else {output = "Sorry, I either can't dp that, or just don't want to"}
 		}
