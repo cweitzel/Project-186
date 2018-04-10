@@ -9,7 +9,7 @@
 import Foundation
 
 class Calc {
-	var first = "", second = "", type = ""
+	var first = "", second = "", type = "", equation = "", fraction = ""
 	var firstNum = -1.0, secondNum = -1.0, ans = -1.0
 	
 	init(first: String, second: String, type: String){
@@ -48,16 +48,23 @@ class Calc {
 	}
 	
 	func findNum(){
-		second = second.replacingOccurrences(of: "?", with: "")
-		if (Double(first) != nil){
-			firstNum = Double(first)!
+		if (first.range(of: "^") != nil) {
+			equation = first;
 		}
-		else { firstNum = makeNum(check: first)}
-		if (Double(second) != nil){
-			secondNum = Double(second)!
+		if (first.range(of: "/") != nil) {
+			fraction = first;
 		}
-		else { secondNum = makeNum(check: second)}
-		
+		else{
+			second = second.replacingOccurrences(of: "?", with: "")
+			if (Double(first) != nil){
+				firstNum = Double(first)!
+			}
+			else { firstNum = makeNum(check: first)}
+			if (Double(second) != nil){
+				secondNum = Double(second)!
+			}
+			else { secondNum = makeNum(check: second)}
+		}
 	}
 	
 	func makeNum(check: String) -> Double{
@@ -77,4 +84,70 @@ class Calc {
 		}
 		return -1
 	}
+	
+	
+	func getDerivitive() -> String{
+		var highDegree = 0;
+		let chars = Array(equation)
+		let separators = CharacterSet(charactersIn: "+,-")
+		let nomials = equation.components(separatedBy: separators)
+		for i in 0...chars.count-1{
+			if(chars[i] == "^"){
+				if(Int(String(chars[i+1]))! > highDegree){
+					highDegree = Int(String(chars[i+1]))!
+				}
+			}
+		}
+		var noms = Array<String>(repeating: "", count:nomials.count)
+		var i = 0
+		for nom in nomials{
+			if (nom.range(of: "^") != nil){
+				var parts = nom.components(separatedBy: "^")
+				if (parts[0].range(of: "x") != nil){
+					parts[0] = parts[0].replacingOccurrences(of: "x", with: "", range: nil)
+					parts[0] = String(Int(parts[0])!*Int(parts[1])!) + "x"
+					parts[1] = String(Int(parts[1])!-1)
+				}
+				else {parts[0] = ""}
+				noms[i] = (parts.joined(separator: "^"))
+				i = i + 1
+			}
+			
+		}
+		equation = noms.joined(separator: "+")
+		return String(equation)
+		
+	}
+	
+	func simplify() -> String{
+		let parts = fraction.components(separatedBy: "/")
+		var num = Int(parts[0])!
+		var den = Int(parts[1])!
+		var i = 2
+		while(i <= num && i <= den){
+			if(Double(num-((num / i)*i)) < 0.1 && Double(den-((den / i)*i)) < 0.1){
+				num = num / i
+				den = den / i
+			}
+			else {i = i+1}
+		}
+		return "\(num)/\(den)"
+	}
+	
+	func toFraction() -> String{
+		let hold = Int(firstNum * 9699690)
+		fraction = "\(hold)/9699690"
+		return simplify()
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+
+

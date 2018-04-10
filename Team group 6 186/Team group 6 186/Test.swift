@@ -49,6 +49,9 @@ class Test  {
 		testDice()
 		testTime()
 		testDate()
+		testDerivitive()
+		testSimple()
+		testToFrac()
 	}
 	
 	//Additional Responcesv (Prioity 2)
@@ -214,4 +217,37 @@ class Test  {
 			output = "The date is \(formatter.string(from: currentDate))"
 		}
 	}
+	func testDerivitive(){
+		if (input.range(of: "der ") != nil){
+			var mathArr = input.components(separatedBy: " ")
+			if (mathArr.count == 2){
+				let calc = Calc(first: mathArr[1])
+				output = calc.getDerivitive()
+			}
+			else {output = "Sorry, I either can't dp that, or just don't want to"}
+		}
+		
+	}
+	
+	func testSimple(){
+		if (input.range(of: "simplify ") != nil){
+			var mathArr = input.components(separatedBy: " ")
+			if (mathArr.count == 2){
+				let calc = Calc(first: mathArr[1])
+				output = calc.simplify()
+			}
+			else {output = "Sorry, I can't simplify that"}
+		}
+	}
+	func testToFrac(){
+		if (input.range(of: "tofrac ") != nil){
+			var mathArr = input.components(separatedBy: " ")
+			if (mathArr.count == 2){
+				let calc = Calc(first: mathArr[1])
+				output = calc.toFraction()
+			}
+			else {output = "Sorry, I can't simplify that"}
+		}
+	}
+		
 }
