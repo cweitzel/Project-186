@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
-    var background = "tinge_1.jpg"
+	
+	@IBOutlet weak var weatherButton: UIButton!
+	var background = "tinge_1.jpg"
     var outputText = Array(repeating: "", count: 13)
     var outputLine = 0;
+
 
     override func viewDidLoad() {
 	
@@ -35,11 +38,17 @@ class ViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view, typically from a nib.
     }
-    override func didReceiveMemoryWarning() {
+	@IBAction func returnToMainScreen(_ sender: Any) {
+	}
+	override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	
+	
+	
+	
     @IBAction func enterTapped(_ sender: Any) {
         printLine()
     }
