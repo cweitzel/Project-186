@@ -11,18 +11,21 @@ import UIKit
 
 class Test  {
 	
-	var input = "DefaultIn"
+	var inputArr = [String]()
+	var input = "Input"
 	var output = "DefaultOut"
 	var temp = "DefaultIn"
 	//Initilizer takes input from ViewController and tests
-	init(input: String){
-		self.input = input.lowercased()
+	init(input: Array<String>){
+		self.inputArr = input
+		self.input = inputArr[inputArr.count-1]
 		first()
 		second()
 	}
 	//Returns text output
-	func getOut() -> String {
-		return output;
+	func getOut() -> [String] {
+		inputArr.append(output)
+		return inputArr;
 	}
 	
 	//Returns text input
@@ -77,7 +80,7 @@ class Test  {
 				if (input.range(of: badWords[i]) != nil){
 					output = "Watch your fucking mouth"
 					for j in 0...badWords.count-1{
-						input = input.replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
+						inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
 					}
 				}
 			}
@@ -218,7 +221,7 @@ class Test  {
 		}
 	}
 	func testDerivitive(){
-		if (input.range(of: "der ") != nil){
+		if (input.range(of: "derive ") != nil){
 			var mathArr = input.components(separatedBy: " ")
 			if (mathArr.count == 2){
 				let calc = Calc(first: mathArr[1])

@@ -13,8 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
-    var outputText = Array(repeating: "", count: 13)
-    var outputLine = 0;
+	var arr = [String]()
 
     override func viewDidLoad() {
         
@@ -47,22 +46,34 @@ class ViewController: UIViewController {
         printLine()
     }
     func printLine(){
-        let test = Test(input: textFieldName.text!)
-        var print = ""
-        outputText[outputLine] = test.getIn()
-        outputLine = outputLine + 1
-        outputText[outputLine] = test.getOut()
-        outputLine = outputLine + 1
-        while (outputLine >= 11){
-            for i in 0...11{
-                outputText[i] = outputText[i+1]
-            }
-            outputLine = outputLine - 1
-        }
-        for i in 0...outputLine+1{
-            print += outputText[i] + "\n"
-        }
-        textView.text = print
-        textFieldName.text = ""
+		arr.append(textFieldName.text!.lowercased()) //Adds input to array
+		let test = Test(input: arr) //creates test and generates output
+		arr = test.getOut() //adds output from test to the array
+//		var size = arr.count - 10;
+//
+		var print = ""
+		let i = arr.count - 10
+//		if (i < 0) {i = 0}
+		let SIZE = 10
+		for i in i..<SIZE+i {
+			if(i>=0 && i<arr.count){
+			print += "\(arr[i]) \n"
+			}
+		}
+		        textView.text = print
+		        textFieldName.text = ""
+
+		
+		
+//        while (outputLine >= 11){
+//            for i in 0...11{
+//                outputText[i] = outputText[i+1]
+//            }
+//            outputLine = outputLine - 1
+//        }
+//        for i in 0...outputLine+1{
+//            print += outputText[i] + "\n"
+//        }
+//        textView.text = print
     }
 }
