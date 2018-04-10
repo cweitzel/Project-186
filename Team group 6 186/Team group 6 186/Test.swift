@@ -252,5 +252,4 @@ class Test  {
 			else {output = "Sorry, I can't simplify that"}
 		}
 	}
-		
 }

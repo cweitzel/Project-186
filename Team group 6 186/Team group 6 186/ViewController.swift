@@ -49,11 +49,8 @@ class ViewController: UIViewController {
 		arr.append(textFieldName.text!.lowercased()) //Adds input to array
 		let test = Test(input: arr) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
-//		var size = arr.count - 10;
-//
 		var print = ""
 		let i = arr.count - 10
-//		if (i < 0) {i = 0}
 		let SIZE = 10
 		for i in i..<SIZE+i {
 			if(i>=0 && i<arr.count){
@@ -62,18 +59,5 @@ class ViewController: UIViewController {
 		}
 		        textView.text = print
 		        textFieldName.text = ""
-
-		
-		
-//        while (outputLine >= 11){
-//            for i in 0...11{
-//                outputText[i] = outputText[i+1]
-//            }
-//            outputLine = outputLine - 1
-//        }
-//        for i in 0...outputLine+1{
-//            print += outputText[i] + "\n"
-//        }
-//        textView.text = print
     }
 }
