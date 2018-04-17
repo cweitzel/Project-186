@@ -50,7 +50,7 @@ class ViewController: UIViewController {
 		let test = Test(input: arr) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
 //		var size = arr.count - 10;
-//n
+//
 		var print = ""
 		let i = arr.count - 10
 //		if (i < 0) {i = 0}
