@@ -62,6 +62,7 @@ class Test  {
 		testDerivitive()
 		testSimple()
 		testToFrac()
+        testConvert()
 	}
 	
 	//Additional Responcesv (Prioity 2)
@@ -129,6 +130,19 @@ class Test  {
 			else {output = "Sorry, I either can't dp that, or just don't want to"}
 		}
 	}
+    func testConvert(){
+        if(input.range(of: "convert") != nil){
+            var mathArr = input.components(separatedBy: " ")
+            if(mathArr.count == 6){
+                let calc = Calc(first: mathArr[1], second: mathArr[3], type: mathArr[5])
+                output = String(calc.getAns())+" "+mathArr[2]+" "+mathArr[5]
+            }
+            if(mathArr.count == 5){
+                let calc = Calc(first: mathArr[1], second: mathArr[2], type: mathArr[4])
+                output = String(calc.getAns())+" "+mathArr[4]
+            }
+        }
+    }
 	func testWhy() {
 		if (input.range(of: "why") != nil){
 			output = "why not?"

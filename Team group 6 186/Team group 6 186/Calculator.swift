@@ -21,6 +21,25 @@ class Calc {
 		if ((type == "minus") || (type == "-")){getDiff()}
 		if ((type == "times") || (type == "*")){getProduct()}
 		if ((type == "divided") || (type == "/")){getQuotient()}
+        
+        //temprature conversions
+        if ((second == "fahrenheit") && (type == "celsius")) {getFahrenheit()}
+        if ((second == "celsius") && (type == "fahrenheit")){getCelsius()}
+        
+        // length conversions
+        if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
+        if ((second == "meters") || (second == "m") && (type == "miles")){
+            firstNum = firstNum/1000;
+            getMiles()
+        }
+        if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
+        
+        // speed conversions
+        
+        //money conversions
+        if ((second == "dollars") || (second == "usd") && (type == "rupees") || (type == "inr")){getINR()}
+        if ((second == "rupees") || (second == "inr") && (type == "dollars") || (type == "usd")){getUSD()}
+
 	}
 	init(first: String){
 		self.first = first
@@ -46,7 +65,30 @@ class Calc {
 	func getQuotient() {
 		ans = firstNum / secondNum
 	}
-	
+    func getFahrenheit(){
+        ans = (firstNum-32)*(5/9)
+        ans = round(ans*10)/10
+    }
+    func getCelsius(){
+        ans = firstNum*(9/5)+32
+        ans = round(ans*10)/10
+    }
+    func getMiles(){
+        ans = firstNum*0.62137119
+        ans = round(ans*10)/10
+    }
+    func getKm(){
+        ans = firstNum/0.62137119
+        ans = round(ans*10)/10
+    }
+    func getINR(){
+        ans = firstNum*65.68
+        ans = round(ans*10)/10
+    }
+    func getUSD(){
+        ans = firstNum/65.68
+        ans = round(ans*10)/10
+    }
 	func findNum(){
 		if (first.range(of: "^") != nil) {
 			equation = first;
