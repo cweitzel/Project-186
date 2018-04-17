@@ -157,7 +157,8 @@ class Test  {
 				num = num - Int(qwersh[pick])!
 				pick += 2
 			}
-			output = qwersh[pick-1]
+			if (inputArr.count > 1 && inputArr[inputArr.count-2] == qwersh[pick-1]){askQwershtin()}
+			else{output = qwersh[pick-1]}
 		}
 	}
 	func testYou(){
