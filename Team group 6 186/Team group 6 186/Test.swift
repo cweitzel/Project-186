@@ -15,10 +15,12 @@ class Test  {
 	var input = "Input"
 	var output = "DefaultOut"
 	var temp = "DefaultIn"
+	var user: User
 	//Initilizer takes input from ViewController and tests
-	init(input: Array<String>){
+	init(input: Array<String>,user: User){
 		self.inputArr = input
 		self.input = inputArr[inputArr.count-1]
+		self.user = user
 		first()
 		second()
 	}
@@ -31,6 +33,11 @@ class Test  {
 	//Returns text input
 	func getIn() -> String {
 		return input;
+	}
+	
+	//Returns the user object
+	func getUser() -> User {
+		return user;
 	}
 	
 	//General Responces (Priotity 1)

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
 	var arr = [String]()
+	var activeUser: User = User()
 
     override func viewDidLoad() {
         
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
     }
     func printLine(){
 		arr.append(textFieldName.text!.lowercased()) //Adds input to array
-		let test = Test(input: arr) //creates test and generates output
+		let test = Test(input: arr,user: activeUser) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
 		var print = ""
 		let i = arr.count - 10
@@ -57,7 +58,8 @@ class ViewController: UIViewController {
 			print += "\(arr[i]) \n"
 			}
 		}
-		        textView.text = print
-		        textFieldName.text = ""
+		textView.text = print
+		textFieldName.text = ""
+		activeUser = test.getUser()
     }
 }
