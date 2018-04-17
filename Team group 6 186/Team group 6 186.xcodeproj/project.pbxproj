@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68B7989E208677C3001C1952 /* userName.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B7989D208677C3001C1952 /* userName.txt */; };
 		F80D5C7E20866EA900A045D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D5C7D20866EA900A045D7 /* User.swift */; };
 		F816C060204F1B9B00D43297 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816C05F204F1B9B00D43297 /* Calculator.swift */; };
 		F816C064204F2A6400D43297 /* Numbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F816C063204F2A6400D43297 /* Numbers.txt */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68B7989D208677C3001C1952 /* userName.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = userName.txt; sourceTree = "<group>"; };
 		F80D5C7D20866EA900A045D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F816C05F204F1B9B00D43297 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		F816C063204F2A6400D43297 /* Numbers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Numbers.txt; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				F816C05F204F1B9B00D43297 /* Calculator.swift */,
 				F81D97F6202A2E480015F35F /* Main.storyboard */,
 				F816C063204F2A6400D43297 /* Numbers.txt */,
+				68B7989D208677C3001C1952 /* userName.txt */,
 				F81D97F9202A2E480015F35F /* Assets.xcassets */,
 				F81D97FB202A2E480015F35F /* LaunchScreen.storyboard */,
 				F81D97FE202A2E480015F35F /* Info.plist */,
@@ -251,6 +254,7 @@
 				F81D97FD202A2E480015F35F /* LaunchScreen.storyboard in Resources */,
 				F81D97FA202A2E480015F35F /* Assets.xcassets in Resources */,
 				F81D97F8202A2E480015F35F /* Main.storyboard in Resources */,
+				68B7989E208677C3001C1952 /* userName.txt in Resources */,
 				F816C064204F2A6400D43297 /* Numbers.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

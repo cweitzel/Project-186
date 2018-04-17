@@ -94,6 +94,21 @@ class Test  {
 			}
 		}
 	}
+    func testUser(){
+        if(input == "username:")
+        {
+            var userName = [String]()
+            var names = input.components(separatedBy: " ")
+            do{
+                if let path = Bundle.main.path(forResource: "userName", ofType: "txt"){
+                    let data = try String(contentsOfFile:path, encoding: String.Encoding.utf8)
+                    userName = data.components(separatedBy: "\n")
+                }
+            }catch let err as NSError {
+                print(err)
+            }
+        }
+    }
 	func testJawn() {
 		if (input.range(of: "jawn") != nil){
 			output = output.replacingOccurrences(of: "?", with: ",")
