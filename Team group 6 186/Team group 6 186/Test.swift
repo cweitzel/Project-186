@@ -63,6 +63,7 @@ class Test  {
 		testSimple()
 		testToFrac()
         testConvert()
+        testUser()
 	}
 	
 	//Additional Responcesv (Prioity 2)
@@ -106,6 +107,11 @@ class Test  {
                 }
             }catch let err as NSError {
                 print(err)
+            }
+            
+            if (names[1] == userName[1])
+            {
+                output = "Welcome "+names[1]
             }
         }
     }
