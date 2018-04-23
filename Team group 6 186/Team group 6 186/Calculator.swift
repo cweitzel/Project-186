@@ -22,21 +22,38 @@ class Calc {
 		if ((type == "times") || (type == "*")){getProduct()}
 		if ((type == "divided") || (type == "/")){getQuotient()}
         
-        //temprature conversions
-        if ((second == "fahrenheit") && (type == "celsius")) {getFahrenheit()}
-        if ((second == "celsius") && (type == "fahrenheit")){getCelsius()}
+        //TEMPRATURE CONVERSIONS
         
-        // length conversions
+        //fahrenheit and celsius
+        if ((second == "fahrenheit") && (type == "celsius")) {getCelsius()}
+        if ((second == "celsius") && (type == "fahrenheit")){getFahrenheit()}
+        //fahrenheit and kelvin
+        if ((second == "fahrenheit") && (type == "kelvin")) {getKelvin()}
+        if ((second == "kelvin") && (type == "fahrenheit")) {getFahrenheitK()}
+        //celsius and kelvin
+        if ((second == "celsius") && (type == "kelvin")){ans = firstNum + 273.15}
+        if ((second == "kelvin") && (type == "celsius")){ans = firstNum - 273.15}
+        
+        // LENGTH CONVERSIONS
+        
+        //kilometers and miles
         if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
+        if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
+        //meters and miles
         if ((second == "meters") || (second == "m") && (type == "miles")){
             firstNum = firstNum/1000;
             getMiles()
         }
-        if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
+        //kilometers and meters
+        if ((second == "kilometers") || (second == "km") && (type == "meters") || (type == "m"))
+        {ans = firstNum/1000;}
+        if ((second == "meters") || (second == "m") && (type == "kilometers") || (type == "km"))
+        {ans = firstNum*1000;}
         
-        // speed conversions
         
-        //money conversions
+        //SPEED CONVERSIONS
+        
+        //CURRENCY CONVERSIONS
         if ((second == "dollars") || (second == "usd") && (type == "rupees") || (type == "inr")){getINR()}
         if ((second == "rupees") || (second == "inr") && (type == "dollars") || (type == "usd")){getUSD()}
 
@@ -65,13 +82,21 @@ class Calc {
 	func getQuotient() {
 		ans = firstNum / secondNum
 	}
-    func getFahrenheit(){
+    func getCelsius(){
         ans = (firstNum-32)*(5/9)
         ans = round(ans*10)/10
     }
-    func getCelsius(){
+    func getFahrenheit(){
         ans = firstNum*(9/5)+32
         ans = round(ans*10)/10
+    }
+    
+    func getKelvin(){
+        ans = (firstNum+459.67)*(5/9)
+        ans = round(ans*10)/10
+    }
+    func getFahrenheitK(){
+        ans = (firstNum*(9/5))-459.67
     }
     func getMiles(){
         ans = firstNum*0.62137119
