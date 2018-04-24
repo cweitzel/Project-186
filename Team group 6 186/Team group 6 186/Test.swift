@@ -238,10 +238,6 @@ class Test  {
 		if(input.range(of: "roll") != nil && input.range(of: "die") != nil)
 		{output = String(arc4random_uniform(6)+1)}
 	}
-	func testCelciustoFarenheit(){
-		if (input.range(of: "to Farenheit") != nil)
-		{/*Yet to be finished*/}
-	}
 	func testTime(){
 		if (input.range(of: "what") != nil && input.range(of: "time") != nil){
 			let currentDate = Date()

@@ -24,4 +24,6 @@ class User{
 	func assignUsername(name: String){
 		username = name;
 	}
+    
+    
 }
