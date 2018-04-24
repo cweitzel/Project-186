@@ -17,7 +17,9 @@ class ViewController: UIViewController {
 	var activeUser: User = User()
 	var size: Int = 0
 
-    override func viewDidLoad() {
+	@IBOutlet weak var weatherDisplay: UITextView!
+	
+	override func viewDidLoad() {
         
         super.viewDidLoad()
         button.layer.borderWidth = 1
@@ -40,8 +42,17 @@ class ViewController: UIViewController {
 		else if (Int(UIScreen.main.bounds.height) == 1024){
 			size = 24
 		}
+		
+		//weather information
+		let weather = WeatherGetter()
+		weather.getWeather(city: "Ames")
+		let array = weather.getArray()
+		weatherDisplay.text = array[1] as! String + "\n" + String(format: "%@", array[4] as! CVarArg) + " Kelvin\n" + String(format: "%@", array[5] as! CVarArg) + "%\n" + String(format: "%@", array[7] as! CVarArg) + "%"
+		
         // Do any additional setup after loading the view, typically from a nib.
     }
+	
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

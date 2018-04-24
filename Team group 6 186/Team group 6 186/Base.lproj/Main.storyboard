@@ -45,6 +45,13 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WwL-HK-J7o"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-Lp-J0h">
+                                <rect key="frame" x="16" y="138" width="343" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -67,6 +74,7 @@
                         <outlet property="button" destination="65T-lJ-jYp" id="SUb-O4-I1U"/>
                         <outlet property="textFieldName" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
                         <outlet property="textView" destination="yoY-ld-Cwe" id="Hhx-B4-nuY"/>
+                        <outlet property="weatherDisplay" destination="0ts-Lp-J0h" id="Xjf-XB-MRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
