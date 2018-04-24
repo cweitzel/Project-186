@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     var background = "tinge_1.jpg"
 	var arr = [String]()
-
+	var size: Int = 0
+	
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -32,6 +33,12 @@ class ViewController: UIViewController {
         backgroundImage.image = UIImage(named: background)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+		if (Int(UIScreen.main.bounds.height) == 736){
+			size = 10
+		}
+		else if (Int(UIScreen.main.bounds.height) == 1024){
+			size = 24
+		}
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
@@ -45,19 +52,24 @@ class ViewController: UIViewController {
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
         printLine()
     }
+	
     func printLine(){
 		arr.append(textFieldName.text!.lowercased()) //Adds input to array
 		let test = Test(input: arr) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
 		var print = ""
-		let i = arr.count - 10
-		let SIZE = 10
-		for i in i..<SIZE+i {
+		
+		
+		let i = arr.count - size
+		
+		for i in i..<size+i {
 			if(i>=0 && i<arr.count){
 			print += "\(arr[i]) \n"
 			}
 		}
-		        textView.text = print
+		       	textView.text = print
+
 		        textFieldName.text = ""
     }
+	
 }
