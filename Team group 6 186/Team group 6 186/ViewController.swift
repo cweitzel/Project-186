@@ -12,13 +12,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
-    var background = "tinge_1.jpg"
+	
+	@IBOutlet weak var weatherView: UITextView!
+	var background = "tinge_1.jpg"
 	var arr = [String]()
 	var activeUser: User = User()
 	var size: Int = 0
 
     override func viewDidLoad() {
-        
+		if (Int(UIScreen.main.bounds.height) == 736){//Formatted for iPhone 8 Plus
+			size = 14
+		}
+		else if (Int(UIScreen.main.bounds.height) == 1024){//Formatted for iPad Air
+			size = 28
+		}
+		else if (Int(UIScreen.main.bounds.height) == 568){ //Formatted for iPhone SE
+			size = 6
+			
+		}
         super.viewDidLoad()
         button.layer.borderWidth = 1
         textFieldName.layer.borderWidth = 1
@@ -34,12 +45,7 @@ class ViewController: UIViewController {
         backgroundImage.image = UIImage(named: background)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-		if (Int(UIScreen.main.bounds.height) == 736){
-			size = 10
-		}
-		else if (Int(UIScreen.main.bounds.height) == 1024){
-			size = 24
-		}
+	
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {

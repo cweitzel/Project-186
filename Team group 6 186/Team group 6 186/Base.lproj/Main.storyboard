@@ -29,7 +29,7 @@
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
-                                <rect key="frame" x="16" y="138" width="343" height="140"/>
+                                <rect key="frame" x="16" y="53" width="343" height="167"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -45,6 +45,13 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WwL-HK-J7o"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" fixedFrame="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVf-no-ZSP">
+                                <rect key="frame" x="16" y="53" width="343" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -52,10 +59,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VuW-kF-vtp" secondAttribute="bottom" constant="319" id="4VR-JU-ynL"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="5fd-vq-vBK"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EqR-Uc-r0p"/>
-                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="FVj-RG-utO"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J5f-jT-9gH"/>
-                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="LO4-DT-q4n"/>
                             <constraint firstItem="VuW-kF-vtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uy4-sh-okf"/>
+                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="fIf-fE-ofl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="65T-lJ-jYp" secondAttribute="trailing" constant="16" id="hUP-oQ-lmZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="379" id="pt5-YB-LAf"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="leading" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="13" id="srA-KT-zcg"/>
@@ -67,6 +73,7 @@
                         <outlet property="button" destination="65T-lJ-jYp" id="SUb-O4-I1U"/>
                         <outlet property="textFieldName" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
                         <outlet property="textView" destination="yoY-ld-Cwe" id="Hhx-B4-nuY"/>
+                        <outlet property="weatherView" destination="dVf-no-ZSP" id="mE4-9G-tjH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

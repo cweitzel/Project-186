@@ -131,6 +131,9 @@ class Calc {
 			}
 			else {i = i+1}
 		}
+		if (den == 1){
+			return "\(num)"
+		}
 		return "\(num)/\(den)"
 	}
 	
