@@ -449,8 +449,9 @@
 		F81D9818202A2E490015F35F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73YFGBB5G8;
+				DEVELOPMENT_TEAM = 43C4TUAABD;
 				INFOPLIST_FILE = "Team group 6 186/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "weil.Team-group-6-186";
@@ -463,8 +464,9 @@
 		F81D9819202A2E490015F35F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73YFGBB5G8;
+				DEVELOPMENT_TEAM = 43C4TUAABD;
 				INFOPLIST_FILE = "Team group 6 186/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "weil.Team-group-6-186";
