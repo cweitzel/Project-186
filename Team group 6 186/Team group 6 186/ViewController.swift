@@ -33,6 +33,12 @@ class ViewController: UIViewController {
         backgroundImage.image = UIImage(named: background)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+		if (Int(UIScreen.main.bounds.height) == 736){
+			size = 10
+		}
+		else if (Int(UIScreen.main.bounds.height) == 1024){
+			size = 24
+		}
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
@@ -46,14 +52,17 @@ class ViewController: UIViewController {
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
         printLine()
     }
+	
     func printLine(){
 		arr.append(textFieldName.text!.lowercased()) //Adds input to array
 		let test = Test(input: arr,user: activeUser) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
 		var print = ""
-		let i = arr.count - 10
-		let SIZE = 10
-		for i in i..<SIZE+i {
+		
+		
+		let i = arr.count - size
+		
+		for i in i..<size+i {
 			if(i>=0 && i<arr.count){
 			print += "\(arr[i]) \n"
 			}
@@ -62,4 +71,5 @@ class ViewController: UIViewController {
 		textFieldName.text = ""
 		activeUser = test.getUser()
     }
+	
 }
