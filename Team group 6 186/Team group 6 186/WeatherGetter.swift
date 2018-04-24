@@ -1,9 +1,9 @@
 //
 //  WeatherGetter.swift
-//  WeatherAppNew
+//  Team group 6 186
 //
 //  Created by Cole Weitzel on 4/24/18.
-//  Copyright © 2018 Cole Weitzel. All rights reserved.
+//  Copyright © 2018 Taylor Weil. All rights reserved.
 //
 
 import Foundation
@@ -94,7 +94,7 @@ class WeatherGetter {
 		
 		// The data task is set up...launch it!
 		dataTask.resume()
-		sleep(2)
+		sleep(1)
 	}
 	
 	func getArray() -> Array<Any>{
