@@ -45,7 +45,7 @@ class Calc {
         //kilometers and meters
         if ((second == "kilometers") || (second == "km") && (type == "meters"))
         {ans = firstNum*1000;}
-        if ((second == "meters") && (type == "kilometers"))
+        if ((second == "meters") && (type == "kilometers")  || (type == "km") )
         {ans = firstNum/1000;}
         
         
