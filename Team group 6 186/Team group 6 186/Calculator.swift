@@ -40,8 +40,7 @@ class Calc {
 		if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
 		//meters and miles
 		if ((second == "meters") || (second == "m") && (type == "miles")){
-			firstNum = firstNum/1000;
-			getMiles()
+			getMetersToMiles()
 		}
 		//kilometers and meters
 		if ((second == "kilometers") || (second == "km") && (type == "meters") || (type == "m"))
@@ -88,7 +87,6 @@ class Calc {
 		ans = firstNum*(9/5)+32
 		ans = round(ans*10)/10
 	}
-	
 	func getKelvin(){
 		ans = (firstNum+459.67)*(5/9)
 		ans = round(ans*10)/10
@@ -100,6 +98,10 @@ class Calc {
 		ans = firstNum*0.62137119
 		ans = round(ans*10)/10
 	}
+    func getMetersToMiles(){
+        ans = (firstNum/1000)/1.6
+        ans = round(ans*10)/10
+    }
 	func getKm(){
 		ans = firstNum/0.62137119
 		ans = round(ans*10)/10
