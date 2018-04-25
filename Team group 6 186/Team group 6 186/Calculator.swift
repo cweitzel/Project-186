@@ -39,14 +39,14 @@ class Calc {
 		if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
 		if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
 		//meters and miles
-		if ((second == "meters") || (second == "m") && (type == "miles")){
+		if ((second == "meters") && (type == "miles")){
 			getMetersToMiles()
 		}
 		//kilometers and meters
-		if ((second == "kilometers") || (second == "km") && (type == "meters") || (type == "m"))
-		{ans = firstNum/1000;}
-		if ((second == "meters") || (second == "m") && (type == "kilometers") || (type == "km"))
+		if ((second == "kilometers") || (second == "km") && (type == "meters"))
 		{ans = firstNum*1000;}
+		if ((second == "meters") && (type == "kilometers"))
+		{ans = firstNum/1000;}
 		
 		
 		//SPEED CONVERSIONS
@@ -93,6 +93,7 @@ class Calc {
 	}
 	func getFahrenheitK(){
 		ans = (firstNum*(9/5))-459.67
+        ans = round(ans*10)/10
 	}
 	func getMiles(){
 		ans = firstNum*0.62137119
