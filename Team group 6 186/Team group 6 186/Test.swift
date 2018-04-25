@@ -26,7 +26,9 @@ class Test  {
 	}
 	//Returns text output
 	func getOut() -> [String] {
-		inputArr.append(output)
+		if(inputArr[inputArr.count-1] != output){
+			inputArr.append(output)
+		}
 		return inputArr;
 	}
 	
@@ -260,7 +262,11 @@ class Test  {
 		}
 	}
 	func testWeather() -> Bool{
-		if ((input.range(of: "weather")) != nil) {return true}
+		
+		if ((input.range(of: "weather")) != nil) {
+			output = ""
+			return true
+		}
 		else {return false}
 	}
 }
