@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 			size = 24
 		}
 		
-		//weather information
+		//Weather information here
 		let weather = WeatherGetter()
 		weather.getWeather(city: "Ames")
 		let array = weather.getArray()
