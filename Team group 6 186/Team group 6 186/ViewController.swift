@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
-    var background = "tinge_1.jpg"
+	
+	@IBOutlet weak var weatherView: UITextView!
+	var background = "tinge_1.jpg"
 	var arr = [String]()
 	var activeUser: User = User()
 	var size: Int = 0
