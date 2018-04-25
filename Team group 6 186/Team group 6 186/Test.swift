@@ -82,13 +82,12 @@ class Test  {
 		let size = badWords.count
 		if (input.range(of: "fuck") != nil) {
 			output = "Fuck you";
-		}else{
-			for i in (0...size-1){
-				if (input.range(of: badWords[i]) != nil){
-					output = "Watch your fucking mouth"
-					for j in 0...badWords.count-1{
-						inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
-					}
+		}
+		for i in (0...size-1){
+			if (input.range(of: badWords[i]) != nil){
+				output = "Watch your fucking mouth"
+				for j in 0...badWords.count-1{
+					inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
 				}
 			}
 		}
