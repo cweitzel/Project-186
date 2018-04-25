@@ -43,7 +43,7 @@ class Calc {
 			getMetersToMiles()
 		}
 		//kilometers and meters
-		if ((second == "kilometers") || (second == "km") && (type == "meters") || (type == "m"))
+		if ((second == "kilometers") || (second == "m") && (type == "meters") || (type == "m"))
 		{ans = firstNum/1000;}
 		if ((second == "meters") || (second == "m") && (type == "kilometers") || (type == "km"))
 		{ans = firstNum*1000;}
