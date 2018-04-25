@@ -28,13 +28,13 @@
                                     <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xnf-L8-GSg"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
-                                <rect key="frame" x="16" y="138" width="343" height="140"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
+                                <rect key="frame" x="16" y="75" width="343" height="203"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
                                 <rect key="frame" x="329" y="318" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="D:lhjasdf" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-Lp-J0h">
-                                <rect key="frame" x="16" y="138" width="343" height="140"/>
+                                <rect key="frame" x="16" y="70" width="343" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -57,11 +57,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="59" id="3X0-QX-coF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VuW-kF-vtp" secondAttribute="bottom" constant="319" id="4VR-JU-ynL"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="5fd-vq-vBK"/>
-                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="7ad-7N-6dq"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="7ad-7N-6dq"/>
                             <constraint firstItem="0ts-Lp-J0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ATT-qk-SFt"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="40" id="DS9-bb-5gX"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EqR-Uc-r0p"/>
-                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="FVj-RG-utO"/>
+                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="FVj-RG-utO"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J5f-jT-9gH"/>
                             <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="LO4-DT-q4n"/>
                             <constraint firstItem="0ts-Lp-J0h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NuE-Gx-Rkw"/>

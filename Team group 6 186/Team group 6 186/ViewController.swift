@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
 		
 		if (Int(UIScreen.main.bounds.height) == 736){
-			size = 10
+			size = 12
 		}
 		else if (Int(UIScreen.main.bounds.height) == 1024){
 			size = 24
@@ -51,8 +51,15 @@ class ViewController: UIViewController {
 		let weather = WeatherGetter()
 		weather.getWeather(city: "Ames")
 		let array = weather.getArray()
-		sleep(2)
-		weatherDisplay.text = array[1] as! String + "\n" + String(format: "%@", array[4] as! CVarArg) + " Kelvin\n" + String(format: "%@", array[5] as! CVarArg) + "%\n" + String(format: "%@", array[7] as! CVarArg) + "%"
+		sleep(1)
+		let temperature = String(format: "%@", array[4] as! CVarArg)
+		let tempAsDouble = Double(temperature)
+		let convertedTemp = ((tempAsDouble! - 273)*1.8)+32
+		weatherDisplay.text = array[1] as! String + "\n"
+		weatherDisplay.text.append(String(convertedTemp))
+		weatherDisplay.text.append(" Fahrenheit\n")
+		weatherDisplay.text.append("Humidity: " + String(format: "%@", array[5] as! CVarArg) + "%\n")
+		weatherDisplay.text.append("Cloud Cover: " + String(format: "%@", array[7] as! CVarArg) + "%")
 		
         // Do any additional setup after loading the view, typically from a nib.
     }
