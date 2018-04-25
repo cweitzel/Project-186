@@ -21,6 +21,40 @@ class Calc {
         if ((type == "minus") || (type == "-")){getDiff()}
         if ((type == "times") || (type == "*")){getProduct()}
         if ((type == "divided") || (type == "/")){getQuotient()}
+		//TEMPRATURE CONVERSIONS
+		
+		//fahrenheit and celsius
+		if ((second == "fahrenheit") && (type == "celsius")) {getCelsius()}
+		if ((second == "celsius") && (type == "fahrenheit")){getFahrenheit()}
+		//fahrenheit and kelvin
+		if ((second == "fahrenheit") && (type == "kelvin")) {getKelvin()}
+		if ((second == "kelvin") && (type == "fahrenheit")) {getFahrenheitK()}
+		//celsius and kelvin
+		if ((second == "celsius") && (type == "kelvin")){ans = firstNum + 273.15}
+		if ((second == "kelvin") && (type == "celsius")){ans = firstNum - 273.15}
+		
+		// LENGTH CONVERSIONS
+		
+		//kilometers and miles
+		if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
+		if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
+		//meters and miles
+		if ((second == "meters") || (second == "m") && (type == "miles")){
+			firstNum = firstNum/1000;
+			getMiles()
+		}
+		//kilometers and meters
+		if ((second == "kilometers") || (second == "km") && (type == "meters") || (type == "m"))
+		{ans = firstNum/1000;}
+		if ((second == "meters") || (second == "m") && (type == "kilometers") || (type == "km"))
+		{ans = firstNum*1000;}
+		
+		
+		//SPEED CONVERSIONS
+		
+		//CURRENCY CONVERSIONS
+		if ((second == "dollars") || (second == "usd") && (type == "rupees") || (type == "inr")){getINR()}
+		if ((second == "rupees") || (second == "inr") && (type == "dollars") || (type == "usd")){getUSD()}
     }
     init(first: String){
         self.first = first
