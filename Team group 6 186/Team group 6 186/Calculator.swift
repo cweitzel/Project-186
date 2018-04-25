@@ -21,39 +21,39 @@ class Calc {
         if ((type == "minus") || (type == "-")){getDiff()}
         if ((type == "times") || (type == "*")){getProduct()}
         if ((type == "divided") || (type == "/")){getQuotient()}
-		//TEMPRATURE CONVERSIONS
-		
-		//fahrenheit and celsius
-		if ((second == "fahrenheit") && (type == "celsius")) {getCelsius()}
-		if ((second == "celsius") && (type == "fahrenheit")){getFahrenheit()}
-		//fahrenheit and kelvin
-		if ((second == "fahrenheit") && (type == "kelvin")) {getKelvin()}
-		if ((second == "kelvin") && (type == "fahrenheit")) {getFahrenheitK()}
-		//celsius and kelvin
-		if ((second == "celsius") && (type == "kelvin")){ans = firstNum + 273.15}
-		if ((second == "kelvin") && (type == "celsius")){ans = firstNum - 273.15}
-		
-		// LENGTH CONVERSIONS
-		
-		//kilometers and miles
-		if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
-		if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
-		//meters and miles
-		if ((second == "meters") && (type == "miles")){
-			getMetersToMiles()
-		}
-		//kilometers and meters
-		if ((second == "kilometers") || (second == "km") && (type == "meters"))
-		{ans = firstNum*1000;}
-		if ((second == "meters") && (type == "kilometers"))
-		{ans = firstNum/1000;}
-		
-		
-		//SPEED CONVERSIONS
-		
-		//CURRENCY CONVERSIONS
-		if ((second == "dollars") || (second == "usd") && (type == "rupees") || (type == "inr")){getINR()}
-		if ((second == "rupees") || (second == "inr") && (type == "dollars") || (type == "usd")){getUSD()}
+        //TEMPRATURE CONVERSIONS
+        
+        //fahrenheit and celsius
+        if ((second == "fahrenheit") && (type == "celsius")) {getCelsius()}
+        if ((second == "celsius") && (type == "fahrenheit")){getFahrenheit()}
+        //fahrenheit and kelvin
+        if ((second == "fahrenheit") && (type == "kelvin")) {getKelvin()}
+        if ((second == "kelvin") && (type == "fahrenheit")) {getFahrenheitK()}
+        //celsius and kelvin
+        if ((second == "celsius") && (type == "kelvin")){ans = firstNum + 273.15}
+        if ((second == "kelvin") && (type == "celsius")){ans = firstNum - 273.15}
+        
+        // LENGTH CONVERSIONS
+        
+        //kilometers and miles
+        if ((second == "kilometers") || (second == "km") && (type == "miles")){getMiles()}
+        if((second == "miles") && (type == "kilometers") || (type == "km")){getKm()}
+        //meters and miles
+        if ((second == "meters") && (type == "miles")){
+            getMetersToMiles()
+        }
+        //kilometers and meters
+        if ((second == "kilometers") || (second == "km") && (type == "meters"))
+        {ans = firstNum*1000;}
+        if ((second == "meters") && (type == "kilometers"))
+        {ans = firstNum/1000;}
+        
+        
+        //SPEED CONVERSIONS
+        
+        //CURRENCY CONVERSIONS
+        if ((second == "dollars") || (second == "usd") && (type == "rupees") || (type == "inr")){getINR()}
+        if ((second == "rupees") || (second == "inr") && (type == "dollars") || (type == "usd")){getUSD()}
     }
     init(first: String){
         self.first = first
@@ -83,38 +83,38 @@ class Calc {
 		ans = (firstNum-32)*(5/9)
 		ans = round(ans*10)/10
 	}
-	func getFahrenheit(){
-		ans = firstNum*(9/5)+32
-		ans = round(ans*10)/10
-	}
-	func getKelvin(){
-		ans = (firstNum+459.67)*(5/9)
-		ans = round(ans*10)/10
-	}
-	func getFahrenheitK(){
-		ans = (firstNum*(9/5))-459.67
+    func getFahrenheit(){
+        ans = firstNum*(9/5)+32
         ans = round(ans*10)/10
-	}
-	func getMiles(){
-		ans = firstNum*0.62137119
-		ans = round(ans*10)/10
-	}
+    }
+    func getKelvin(){
+        ans = (firstNum+459.67)*(5/9)
+        ans = round(ans*10)/10
+    }
+    func getFahrenheitK(){
+        ans = (firstNum*(9/5))-459.67
+        ans = round(ans*10)/10
+    }
+    func getMiles(){
+        ans = firstNum*0.62137119
+        ans = round(ans*10)/10
+    }
     func getMetersToMiles(){
         ans = (firstNum/1000)/1.6
         ans = round(ans*10)/10
     }
-	func getKm(){
-		ans = firstNum/0.62137119
-		ans = round(ans*10)/10
-	}
-	func getINR(){
-		ans = firstNum*65.68
-		ans = round(ans*10)/10
-	}
-	func getUSD(){
-		ans = firstNum/65.68
-		ans = round(ans*10)/10
-	}
+    func getKm(){
+        ans = firstNum/0.62137119
+        ans = round(ans*10)/10
+    }
+    func getINR(){
+        ans = firstNum*65.68
+        ans = round(ans*10)/10
+    }
+    func getUSD(){
+        ans = firstNum/65.68
+        ans = round(ans*10)/10
+    }
     
     func findNum(){
         if (first.range(of: "^") != nil) {
