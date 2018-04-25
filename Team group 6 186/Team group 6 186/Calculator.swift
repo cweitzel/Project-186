@@ -80,6 +80,38 @@ class Calc {
     func getQuotient() {
         ans = firstNum / secondNum
     }
+	func getCelsius(){
+		ans = (firstNum-32)*(5/9)
+		ans = round(ans*10)/10
+	}
+	func getFahrenheit(){
+		ans = firstNum*(9/5)+32
+		ans = round(ans*10)/10
+	}
+	
+	func getKelvin(){
+		ans = (firstNum+459.67)*(5/9)
+		ans = round(ans*10)/10
+	}
+	func getFahrenheitK(){
+		ans = (firstNum*(9/5))-459.67
+	}
+	func getMiles(){
+		ans = firstNum*0.62137119
+		ans = round(ans*10)/10
+	}
+	func getKm(){
+		ans = firstNum/0.62137119
+		ans = round(ans*10)/10
+	}
+	func getINR(){
+		ans = firstNum*65.68
+		ans = round(ans*10)/10
+	}
+	func getUSD(){
+		ans = firstNum/65.68
+		ans = round(ans*10)/10
+	}
     
     func findNum(){
         if (first.range(of: "^") != nil) {
