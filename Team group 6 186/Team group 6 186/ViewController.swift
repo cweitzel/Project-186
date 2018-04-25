@@ -93,7 +93,6 @@ class ViewController: UIViewController {
         if (test.testWeather()) {
             if (weatherDisplay.isHidden) {weatherDisplay.isHidden = false}
         }
-        var number = test.getOut().count-1
         if(test.getOut()[test.getOut().count-1] != ("")){
             arr = test.getOut() //adds output from test to the array
         }
