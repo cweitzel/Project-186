@@ -127,7 +127,7 @@ class Test  {
 				let calc = Calc(first: newMathArr[0], second: newMathArr[1], type: marker)
 				output = String(calc.getAns())
 			}
-			else {output = "Sorry, I either can't dp that, or just don't want to"}
+			else {output = "Sorry, I either can't do that, or just don't want to"}
 		}
 	}
 	func testWhy() {
