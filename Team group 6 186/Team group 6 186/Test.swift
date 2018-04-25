@@ -87,7 +87,7 @@ class Test  {
 		}
 		for i in (0...size-1){
 			if (input.range(of: badWords[i]) != nil){
-				output = "Watch your fucking mouth"
+				output = "Watch your mouth!"
 				for j in 0...badWords.count-1{
 					inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
 				}
