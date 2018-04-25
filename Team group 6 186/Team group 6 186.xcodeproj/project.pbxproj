@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60C763532090BC8D0031DCA4 /* WeatherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C763522090BC8D0031DCA4 /* WeatherTest.swift */; };
 		F80D5C7E20866EA900A045D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D5C7D20866EA900A045D7 /* User.swift */; };
 		F816C060204F1B9B00D43297 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816C05F204F1B9B00D43297 /* Calculator.swift */; };
 		F816C064204F2A6400D43297 /* Numbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = F816C063204F2A6400D43297 /* Numbers.txt */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60C763522090BC8D0031DCA4 /* WeatherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTest.swift; sourceTree = "<group>"; };
 		F80D5C7D20866EA900A045D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F816C05F204F1B9B00D43297 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		F816C063204F2A6400D43297 /* Numbers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Numbers.txt; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				F8A320B12045F3A100359854 /* Test.swift */,
 				F80D5C7D20866EA900A045D7 /* User.swift */,
 				F81D97F2202A2E480015F35F /* AppDelegate.swift */,
+				60C763522090BC8D0031DCA4 /* WeatherTest.swift */,
 				F81D97F4202A2E480015F35F /* ViewController.swift */,
 				F816C05F204F1B9B00D43297 /* Calculator.swift */,
 				F81D97F6202A2E480015F35F /* Main.storyboard */,
@@ -280,6 +283,7 @@
 				F81D97F5202A2E480015F35F /* ViewController.swift in Sources */,
 				F816C060204F1B9B00D43297 /* Calculator.swift in Sources */,
 				F81D97F3202A2E480015F35F /* AppDelegate.swift in Sources */,
+				60C763532090BC8D0031DCA4 /* WeatherTest.swift in Sources */,
 				F8A320B22045F3A100359854 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,10 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73YFGBB5G8;
+				DEVELOPMENT_TEAM = ZDU22GR854;
 				INFOPLIST_FILE = "Team group 6 186/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "weil.Team-group-6-186";
+				PRODUCT_BUNDLE_IDENTIFIER = BensGnirts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,10 +464,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73YFGBB5G8;
+				DEVELOPMENT_TEAM = ZDU22GR854;
 				INFOPLIST_FILE = "Team group 6 186/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "weil.Team-group-6-186";
+				PRODUCT_BUNDLE_IDENTIFIER = BensGnirts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

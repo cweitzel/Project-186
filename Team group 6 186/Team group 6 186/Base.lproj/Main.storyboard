@@ -28,7 +28,7 @@
                                     <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xnf-L8-GSg"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
                                 <rect key="frame" x="16" y="138" width="343" height="140"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -45,9 +45,8 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WwL-HK-J7o"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-Lp-J0h">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="D:lhjasdf" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-Lp-J0h">
                                 <rect key="frame" x="16" y="138" width="343" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -57,15 +56,21 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="59" id="3X0-QX-coF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VuW-kF-vtp" secondAttribute="bottom" constant="319" id="4VR-JU-ynL"/>
-                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="5fd-vq-vBK"/>
+                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="5fd-vq-vBK"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="7ad-7N-6dq"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ATT-qk-SFt"/>
+                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="40" id="DS9-bb-5gX"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EqR-Uc-r0p"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="FVj-RG-utO"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J5f-jT-9gH"/>
-                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="LO4-DT-q4n"/>
+                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="LO4-DT-q4n"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NuE-Gx-Rkw"/>
                             <constraint firstItem="VuW-kF-vtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uy4-sh-okf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="65T-lJ-jYp" secondAttribute="trailing" constant="16" id="hUP-oQ-lmZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="379" id="pt5-YB-LAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="389" id="pt5-YB-LAf"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="leading" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="13" id="srA-KT-zcg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="389" id="uyi-Oj-iWj"/>
+                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="40" id="vMh-Lz-wcY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="65T-lJ-jYp" secondAttribute="bottom" constant="319" id="yKj-1R-mAA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

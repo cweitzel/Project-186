@@ -25,17 +25,21 @@ class ViewController: UIViewController {
         button.layer.borderWidth = 1
         textFieldName.layer.borderWidth = 1
         textView.layer.borderWidth = 1.5
+		weatherDisplay.layer.borderWidth = 1.5
         button.layer.cornerRadius = 15
         button.clipsToBounds = true
         textView.layer.cornerRadius=10
         textView.clipsToBounds = true
         textFieldName.layer.cornerRadius = 10
         textFieldName.clipsToBounds = true
+		weatherDisplay.layer.cornerRadius=10
+		weatherDisplay.isHidden = true
         textView.isUserInteractionEnabled = false
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: background)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+		
 		if (Int(UIScreen.main.bounds.height) == 736){
 			size = 10
 		}
@@ -47,6 +51,7 @@ class ViewController: UIViewController {
 		let weather = WeatherGetter()
 		weather.getWeather(city: "Ames")
 		let array = weather.getArray()
+		sleep(2)
 		weatherDisplay.text = array[1] as! String + "\n" + String(format: "%@", array[4] as! CVarArg) + " Kelvin\n" + String(format: "%@", array[5] as! CVarArg) + "%\n" + String(format: "%@", array[7] as! CVarArg) + "%"
 		
         // Do any additional setup after loading the view, typically from a nib.
@@ -69,6 +74,10 @@ class ViewController: UIViewController {
 		arr.append(textFieldName.text!.lowercased()) //Adds input to array
 		let test = Test(input: arr,user: activeUser) //creates test and generates output
 		arr = test.getOut() //adds output from test to the array
+		if (test.testWeather()) {
+			if (weatherDisplay.isHidden) {weatherDisplay.isHidden = false}
+			else {weatherDisplay.isHidden = true}
+		}
 		var print = ""
 		
 		

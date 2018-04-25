@@ -235,7 +235,7 @@ class Test  {
 				let calc = Calc(first: mathArr[1])
 				output = calc.getDerivitive()
 			}
-			else {output = "Sorry, I either can't dp that, or just don't want to"}
+			else {output = "Sorry, I either can't do that, or just don't want to"}
 		}
 		
 	}
@@ -259,5 +259,9 @@ class Test  {
 			}
 			else {output = "Sorry, I can't simplify that"}
 		}
+	}
+	func testWeather() -> Bool{
+		if ((input.range(of: "weather")) != nil) {return true}
+		else {return false}
 	}
 }
