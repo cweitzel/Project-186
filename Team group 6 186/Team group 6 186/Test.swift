@@ -125,6 +125,10 @@ class Test  {
 					}
 				}
 				var newMathArr = mathArr[2].components(separatedBy: marker)
+				if(marker == ""){
+					output = "Sorry, I either can't do that, or just don't want to"
+					return
+				}
 				let calc = Calc(first: newMathArr[0], second: newMathArr[1], type: marker)
 				output = String(calc.getAns())
 			}
