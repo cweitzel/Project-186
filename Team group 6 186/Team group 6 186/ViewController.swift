@@ -46,14 +46,14 @@ class ViewController: UIViewController {
 			size = 12
 		}
 		else if (Int(UIScreen.main.bounds.height) == 1024){
-			size = 24
+			size = 27
 		}
 		
 		//Weather information here
 		let weather = WeatherGetter()
 		weather.getWeather(city: "Ames")
 		let array = weather.getArray()
-		sleep(1)
+		sleep(2)
 		let temperature = String(format: "%@", array[4] as! CVarArg)
 		let tempAsDouble = Double(temperature)
 		let convertedTemp = ((tempAsDouble! - 273)*1.8)+32

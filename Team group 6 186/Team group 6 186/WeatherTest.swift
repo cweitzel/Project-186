@@ -70,7 +70,7 @@ class WeatherGetter {
 					self.array.append(weather["clouds"]!["all"]!!)
 					print("Cloud cover: \(self.array[7])")
 					
-					self.array.append(weather["wind"]!["deg"]!!)
+					/*self.array.append(weather["wind"]!["deg"]!!)
 					print("Wind direction: \(self.array[8]) degrees")
 					
 					self.array.append(weather["wind"]!["speed"]!!)
@@ -83,7 +83,7 @@ class WeatherGetter {
 					print("Sunrise: \(self.array[11])")
 					
 					self.array.append(weather["sys"]!["sunset"]!!)
-					print("Sunset: \(self.array[12])")
+					print("Sunset: \(self.array[12])")*/
 				}
 				catch let jsonError as NSError {
 					// An error occurred while trying to convert the data into a Swift dictionary.
