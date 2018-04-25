@@ -15,10 +15,12 @@ class Test  {
 	var input = "Input"
 	var output = "DefaultOut"
 	var temp = "DefaultIn"
+	var user: User
 	//Initilizer takes input from ViewController and tests
-	init(input: Array<String>){
+	init(input: Array<String>,user: User){
 		self.inputArr = input
 		self.input = inputArr[inputArr.count-1]
+		self.user = user
 		first()
 		second()
 	}
@@ -31,6 +33,11 @@ class Test  {
 	//Returns text input
 	func getIn() -> String {
 		return input;
+	}
+	
+	//Returns the user object
+	func getUser() -> User {
+		return user;
 	}
 	
 	//General Responces (Priotity 1)
@@ -75,13 +82,12 @@ class Test  {
 		let size = badWords.count
 		if (input.range(of: "fuck") != nil) {
 			output = "Fuck you";
-		}else{
-			for i in (0...size-1){
-				if (input.range(of: badWords[i]) != nil){
-					output = "Watch your fucking mouth"
-					for j in 0...badWords.count-1{
-						inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
-					}
+		}
+		for i in (0...size-1){
+			if (input.range(of: badWords[i]) != nil){
+				output = "Watch your fucking mouth"
+				for j in 0...badWords.count-1{
+					inputArr[inputArr.count-1] = inputArr[inputArr.count-1].replacingOccurrences(of: badWords[j], with: "🤬", options: .literal, range: nil)
 				}
 			}
 		}
@@ -157,7 +163,8 @@ class Test  {
 				num = num - Int(qwersh[pick])!
 				pick += 2
 			}
-			output = qwersh[pick-1]
+			if (inputArr.count > 1 && inputArr[inputArr.count-2] == qwersh[pick-1]){askQwershtin()}
+			else{output = qwersh[pick-1]}
 		}
 	}
 	func testYou(){
@@ -227,7 +234,7 @@ class Test  {
 				let calc = Calc(first: mathArr[1])
 				output = calc.getDerivitive()
 			}
-			else {output = "Sorry, I either can't dp that, or just don't want to"}
+			else {output = "Sorry, I either can't do that, or just don't want to"}
 		}
 		
 	}
@@ -252,5 +259,8 @@ class Test  {
 			else {output = "Sorry, I can't simplify that"}
 		}
 	}
-		
+	func testWeather() -> Bool{
+		if ((input.range(of: "weather")) != nil) {return true}
+		else {return false}
+	}
 }

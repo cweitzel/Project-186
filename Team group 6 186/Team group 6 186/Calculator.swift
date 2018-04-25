@@ -140,9 +140,6 @@ class Calc {
 		return simplify()
 	}
 	
-	
-	
-	
 }
 
 

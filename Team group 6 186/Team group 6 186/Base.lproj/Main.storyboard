@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,13 +28,13 @@
                                     <action selector="textFieldPrimaryActionTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xnf-L8-GSg"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
-                                <rect key="frame" x="16" y="138" width="343" height="140"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="300" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-ld-Cwe">
+                                <rect key="frame" x="16" y="75" width="343" height="203"/>
                                 <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65T-lJ-jYp">
                                 <rect key="frame" x="329" y="318" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
@@ -45,20 +45,32 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WwL-HK-J7o"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="D:lhjasdf" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-Lp-J0h">
+                                <rect key="frame" x="16" y="70" width="343" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.81064624910000005" green="0.82804404149999999" blue="0.80157295240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="59" id="3X0-QX-coF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VuW-kF-vtp" secondAttribute="bottom" constant="319" id="4VR-JU-ynL"/>
-                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="5fd-vq-vBK"/>
+                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="5fd-vq-vBK"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="7ad-7N-6dq"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ATT-qk-SFt"/>
+                            <constraint firstItem="65T-lJ-jYp" firstAttribute="top" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="40" id="DS9-bb-5gX"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EqR-Uc-r0p"/>
-                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="FVj-RG-utO"/>
+                            <constraint firstItem="yoY-ld-Cwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="FVj-RG-utO"/>
                             <constraint firstItem="yoY-ld-Cwe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J5f-jT-9gH"/>
-                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="30" id="LO4-DT-q4n"/>
+                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="40" id="LO4-DT-q4n"/>
+                            <constraint firstItem="0ts-Lp-J0h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NuE-Gx-Rkw"/>
                             <constraint firstItem="VuW-kF-vtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uy4-sh-okf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="65T-lJ-jYp" secondAttribute="trailing" constant="16" id="hUP-oQ-lmZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="379" id="pt5-YB-LAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yoY-ld-Cwe" secondAttribute="bottom" constant="389" id="pt5-YB-LAf"/>
                             <constraint firstItem="65T-lJ-jYp" firstAttribute="leading" secondItem="VuW-kF-vtp" secondAttribute="trailing" constant="13" id="srA-KT-zcg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="389" id="uyi-Oj-iWj"/>
+                            <constraint firstItem="VuW-kF-vtp" firstAttribute="top" secondItem="0ts-Lp-J0h" secondAttribute="bottom" constant="40" id="vMh-Lz-wcY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="65T-lJ-jYp" secondAttribute="bottom" constant="319" id="yKj-1R-mAA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +79,7 @@
                         <outlet property="button" destination="65T-lJ-jYp" id="SUb-O4-I1U"/>
                         <outlet property="textFieldName" destination="VuW-kF-vtp" id="9JL-qH-6bI"/>
                         <outlet property="textView" destination="yoY-ld-Cwe" id="Hhx-B4-nuY"/>
+                        <outlet property="weatherDisplay" destination="0ts-Lp-J0h" id="Xjf-XB-MRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
