@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var background = "tinge_1.jpg"
     var arr = [String]()
     var activeUser: User = User()
-    var size: Int = 6
+    var size: Int = 5
     
     @IBOutlet weak var weatherDisplay: UITextView!
     
