@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var background = "tinge_1.jpg"
     var arr = [String]()
     var activeUser: User = User()
-    var size: Int = 5
+    var size: Int = 1
     
     @IBOutlet weak var weatherDisplay: UITextView!
     
@@ -42,12 +42,21 @@ class ViewController: UIViewController {
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        if (Int(UIScreen.main.bounds.height) == 736){
+        if (Int(UIScreen.main.bounds.height) == 736){//iPhone plus models
             size = 12
         }
-        else if (Int(UIScreen.main.bounds.height) == 1024){
+        else if (Int(UIScreen.main.bounds.height) == 1024){//iPad air models
             size = 27
         }
+		else if (Int(UIScreen.main.bounds.height) == 667){//iPhone standard newer models
+			size = 9
+		}
+		else if (Int(UIScreen.main.bounds.height) == 568){//iPhone SE
+			size = 4
+		}
+		else if (Int(UIScreen.main.bounds.height) == 812){//iPhone Z
+			size = 14
+		}
         
         //Weather information here
         let weather = WeatherGetter()
